@@ -1,0 +1,529 @@
+{
+  "preregistration_sha256": "8537bfc45f2c936056e38570677829c567ab78a84f7893ba009eba0561646dfc",
+  "dataset": "spambase",
+  "dataset_check": [
+    {
+      "dataset": "numerai28.6",
+      "rows": 96320,
+      "origin_accuracy": 0.51455,
+      "floor": 0.50675
+    },
+    {
+      "dataset": "phoneme",
+      "rows": 5404,
+      "origin_accuracy": 0.790058170280275,
+      "floor": 0.7070333157059756
+    },
+    {
+      "dataset": "spambase",
+      "rows": 4601,
+      "origin_accuracy": 0.9111801242236025,
+      "floor": 0.6037267080745341
+    }
+  ],
+  "rows": {
+    "gate": 1610,
+    "audit": 1150,
+    "train": 1840
+  },
+  "epsilon": 0.02,
+  "epsilon_from_accuracy": 0.7552795031055901,
+  "E": 0.05,
+  "origin_audit_served_accuracy": 0.9173913043478261,
+  "audit_served_accuracy": {
+    "v1 origin": 0.9173913043478261,
+    "c1 clean retrain": 0.92,
+    "c2 clean, twice the steps": 0.922608695652174,
+    "c3 3% flipped": 0.92,
+    "c4 6% flipped": 0.9165217391304348,
+    "c5 9% flipped": 0.9182608695652174,
+    "c6 12% flipped": 0.9130434782608695,
+    "c7 15% flipped": 0.9165217391304348,
+    "c8 18% flipped": 0.9130434782608695,
+    "c9 45% flipped": 0.9139130434782609,
+    "c10 clean retrain": 0.922608695652174
+  },
+  "gate_served_accuracy": {
+    "v1 origin": 0.9192546583850931,
+    "c1 clean retrain": 0.9161490683229814,
+    "c2 clean, twice the steps": 0.9186335403726708,
+    "c3 3% flipped": 0.9136645962732919,
+    "c4 6% flipped": 0.915527950310559,
+    "c5 9% flipped": 0.9130434782608695,
+    "c6 12% flipped": 0.9136645962732919,
+    "c7 15% flipped": 0.9080745341614906,
+    "c8 18% flipped": 0.9142857142857143,
+    "c9 45% flipped": 0.9130434782608695,
+    "c10 clean retrain": 0.9124223602484473
+  },
+  "gate_updated_accuracy": {
+    "v1 origin": 0.9111801242236025,
+    "c1 clean retrain": 0.9031055900621118,
+    "c2 clean, twice the steps": 0.9173913043478261,
+    "c3 3% flipped": 0.893167701863354,
+    "c4 6% flipped": 0.8919254658385093,
+    "c5 9% flipped": 0.8857142857142857,
+    "c6 12% flipped": 0.8757763975155279,
+    "c7 15% flipped": 0.8757763975155279,
+    "c8 18% flipped": 0.8795031055900621,
+    "c9 45% flipped": 0.6596273291925466,
+    "c10 clean retrain": 0.9031055900621118
+  },
+  "audit_updated_accuracy": {
+    "v1 origin": 0.9069565217391304,
+    "c1 clean retrain": 0.9121739130434783,
+    "c2 clean, twice the steps": 0.9147826086956522,
+    "c3 3% flipped": 0.8913043478260869,
+    "c4 6% flipped": 0.9043478260869565,
+    "c5 9% flipped": 0.8973913043478261,
+    "c6 12% flipped": 0.8860869565217391,
+    "c7 15% flipped": 0.8686956521739131,
+    "c8 18% flipped": 0.888695652173913,
+    "c9 45% flipped": 0.6521739130434783,
+    "c10 clean retrain": 0.9182608695652174
+  },
+  "arms": {
+    "no_gate": {
+      "decisions": [
+        {
+          "candidate": "c1 clean retrain",
+          "compared_with": "v1 origin",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.92,
+          "reason": "no gate"
+        },
+        {
+          "candidate": "c2 clean, twice the steps",
+          "compared_with": "c1 clean retrain",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.922608695652174,
+          "reason": "no gate"
+        },
+        {
+          "candidate": "c3 3% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.92,
+          "reason": "no gate"
+        },
+        {
+          "candidate": "c4 6% flipped",
+          "compared_with": "c3 3% flipped",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9165217391304348,
+          "reason": "no gate"
+        },
+        {
+          "candidate": "c5 9% flipped",
+          "compared_with": "c4 6% flipped",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9182608695652174,
+          "reason": "no gate"
+        },
+        {
+          "candidate": "c6 12% flipped",
+          "compared_with": "c5 9% flipped",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9130434782608695,
+          "reason": "no gate"
+        },
+        {
+          "candidate": "c7 15% flipped",
+          "compared_with": "c6 12% flipped",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9165217391304348,
+          "reason": "no gate"
+        },
+        {
+          "candidate": "c8 18% flipped",
+          "compared_with": "c7 15% flipped",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9130434782608695,
+          "reason": "no gate"
+        },
+        {
+          "candidate": "c9 45% flipped",
+          "compared_with": "c8 18% flipped",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9139130434782609,
+          "reason": "no gate"
+        },
+        {
+          "candidate": "c10 clean retrain",
+          "compared_with": "c9 45% flipped",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.922608695652174,
+          "reason": "no gate"
+        }
+      ],
+      "final_version": "c10 clean retrain",
+      "final_audit_served_accuracy": 0.922608695652174,
+      "final_origin_drift": 0.00521739130434784,
+      "harmful_promoted": 0,
+      "harmful_offered": 0,
+      "benign_rejected": []
+    },
+    "step_point": {
+      "decisions": [
+        {
+          "candidate": "c1 clean retrain",
+          "compared_with": "v1 origin",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.92,
+          "reason": "point step estimate"
+        },
+        {
+          "candidate": "c2 clean, twice the steps",
+          "compared_with": "c1 clean retrain",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.922608695652174,
+          "reason": "point step estimate"
+        },
+        {
+          "candidate": "c3 3% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.92,
+          "reason": "point step estimate"
+        },
+        {
+          "candidate": "c4 6% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9165217391304348,
+          "reason": "point step estimate"
+        },
+        {
+          "candidate": "c5 9% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9182608695652174,
+          "reason": "point step estimate"
+        },
+        {
+          "candidate": "c6 12% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9130434782608695,
+          "reason": "point step estimate"
+        },
+        {
+          "candidate": "c7 15% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9165217391304348,
+          "reason": "point step estimate"
+        },
+        {
+          "candidate": "c8 18% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9130434782608695,
+          "reason": "point step estimate"
+        },
+        {
+          "candidate": "c9 45% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9139130434782609,
+          "reason": "point step estimate"
+        },
+        {
+          "candidate": "c10 clean retrain",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.922608695652174,
+          "reason": "point step estimate"
+        }
+      ],
+      "final_version": "c10 clean retrain",
+      "final_audit_served_accuracy": 0.922608695652174,
+      "final_origin_drift": 0.00521739130434784,
+      "harmful_promoted": 0,
+      "harmful_offered": 0,
+      "benign_rejected": [
+        "c3 3% flipped",
+        "c4 6% flipped",
+        "c5 9% flipped",
+        "c6 12% flipped",
+        "c7 15% flipped",
+        "c8 18% flipped",
+        "c9 45% flipped"
+      ]
+    },
+    "step_origin_point": {
+      "decisions": [
+        {
+          "candidate": "c1 clean retrain",
+          "compared_with": "v1 origin",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.92,
+          "reason": "point step and origin estimates"
+        },
+        {
+          "candidate": "c2 clean, twice the steps",
+          "compared_with": "c1 clean retrain",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.922608695652174,
+          "reason": "point step and origin estimates"
+        },
+        {
+          "candidate": "c3 3% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.92,
+          "reason": "point step and origin estimates"
+        },
+        {
+          "candidate": "c4 6% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9165217391304348,
+          "reason": "point step and origin estimates"
+        },
+        {
+          "candidate": "c5 9% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9182608695652174,
+          "reason": "point step and origin estimates"
+        },
+        {
+          "candidate": "c6 12% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9130434782608695,
+          "reason": "point step and origin estimates"
+        },
+        {
+          "candidate": "c7 15% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9165217391304348,
+          "reason": "point step and origin estimates"
+        },
+        {
+          "candidate": "c8 18% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9130434782608695,
+          "reason": "point step and origin estimates"
+        },
+        {
+          "candidate": "c9 45% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9139130434782609,
+          "reason": "point step and origin estimates"
+        },
+        {
+          "candidate": "c10 clean retrain",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.922608695652174,
+          "reason": "point step and origin estimates"
+        }
+      ],
+      "final_version": "c10 clean retrain",
+      "final_audit_served_accuracy": 0.922608695652174,
+      "final_origin_drift": 0.00521739130434784,
+      "harmful_promoted": 0,
+      "harmful_offered": 0,
+      "benign_rejected": [
+        "c3 3% flipped",
+        "c4 6% flipped",
+        "c5 9% flipped",
+        "c6 12% flipped",
+        "c7 15% flipped",
+        "c8 18% flipped",
+        "c9 45% flipped"
+      ]
+    },
+    "cce": {
+      "decisions": [
+        {
+          "candidate": "c1 clean retrain",
+          "compared_with": "v1 origin",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.92,
+          "reason": "Drift gates passed, promoted to production"
+        },
+        {
+          "candidate": "c2 clean, twice the steps",
+          "compared_with": "c1 clean retrain",
+          "promoted": true,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.922608695652174,
+          "reason": "Drift gates passed, promoted to production"
+        },
+        {
+          "candidate": "c3 3% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.92,
+          "reason": "Drift gates did not pass: updated(inconclusive)"
+        },
+        {
+          "candidate": "c4 6% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9165217391304348,
+          "reason": "Drift gates did not pass: updated(inconclusive)"
+        },
+        {
+          "candidate": "c5 9% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9182608695652174,
+          "reason": "Drift gates did not pass: updated(step_drift)"
+        },
+        {
+          "candidate": "c6 12% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9130434782608695,
+          "reason": "Drift gates did not pass: updated(step_drift)"
+        },
+        {
+          "candidate": "c7 15% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9165217391304348,
+          "reason": "Drift gates did not pass: updated(step_drift)"
+        },
+        {
+          "candidate": "c8 18% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9130434782608695,
+          "reason": "Drift gates did not pass: updated(step_drift)"
+        },
+        {
+          "candidate": "c9 45% flipped",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.9139130434782609,
+          "reason": "Drift gates did not pass: updated(both)"
+        },
+        {
+          "candidate": "c10 clean retrain",
+          "compared_with": "c2 clean, twice the steps",
+          "promoted": false,
+          "harmful": false,
+          "harmful_against_origin": false,
+          "audit_served_accuracy": 0.922608695652174,
+          "reason": "Drift gates did not pass: updated(inconclusive)"
+        }
+      ],
+      "final_version": "c2 clean, twice the steps",
+      "final_audit_served_accuracy": 0.922608695652174,
+      "final_origin_drift": 0.00521739130434784,
+      "harmful_promoted": 0,
+      "harmful_offered": 0,
+      "benign_rejected": [
+        "c3 3% flipped",
+        "c4 6% flipped",
+        "c5 9% flipped",
+        "c6 12% flipped",
+        "c7 15% flipped",
+        "c8 18% flipped",
+        "c9 45% flipped",
+        "c10 clean retrain"
+      ]
+    }
+  },
+  "verdict": {
+    "PC1 cce stays within E of origin, no_gate does not": false,
+    "PC2 cce promotes no harmful candidate, no_gate promotes every one": true,
+    "PC3 step_point promotes a candidate harmful against origin": false,
+    "PC4 cce rejects at most one benign clean candidate": true,
+    "PC4 detail": {
+      "benign clean candidates": [
+        "c1 clean retrain",
+        "c2 clean, twice the steps",
+        "c10 clean retrain"
+      ],
+      "rejected": [
+        "c10 clean retrain"
+      ]
+    },
+    "H3 on this dataset": "not supported"
+  }
+}

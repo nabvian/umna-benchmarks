@@ -1,0 +1,528 @@
+{
+  "preregistration_sha256": "3f9752d649c83ea30486c2478e93a23d146010702603d82666dff55f830d9222",
+  "stages": [
+    {
+      "stage": 1,
+      "task": "task_1",
+      "eta": 0.2,
+      "core_sha256_unchanged": true,
+      "max_wing_output_change": 0.0,
+      "tasks": {
+        "no_cce": {
+          "task_1": {
+            "audit_served_accuracy": 0.91,
+            "audit_net_correct": 0.89,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 3,
+            "decision": "introduced"
+          }
+        },
+        "cce": {
+          "task_1": {
+            "audit_served_accuracy": 0.91,
+            "audit_net_correct": 0.89,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 3,
+            "decision": "introduced"
+          }
+        }
+      },
+      "shared": {
+        "task_1": {
+          "audit_accuracy": 0.9633333333333334,
+          "change_from_first": 0.0
+        }
+      }
+    },
+    {
+      "stage": 2,
+      "task": "task_2",
+      "eta": 0.2,
+      "core_sha256_unchanged": true,
+      "max_wing_output_change": 0.0,
+      "tasks": {
+        "no_cce": {
+          "task_1": {
+            "audit_served_accuracy": 0.91,
+            "audit_net_correct": 0.89,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 6,
+            "decision": "all Wings"
+          },
+          "task_2": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.92,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 6,
+            "decision": "introduced"
+          }
+        },
+        "cce": {
+          "task_1": {
+            "audit_served_accuracy": 0.91,
+            "audit_net_correct": 0.89,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 6,
+            "decision": "admitted new Wings"
+          },
+          "task_2": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.92,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 6,
+            "decision": "introduced"
+          }
+        }
+      },
+      "shared": {
+        "task_1": {
+          "audit_accuracy": 0.8533333333333334,
+          "change_from_first": -0.10999999999999999
+        },
+        "task_2": {
+          "audit_accuracy": 0.9633333333333334,
+          "change_from_first": 0.0
+        }
+      }
+    },
+    {
+      "stage": 3,
+      "task": "task_3",
+      "eta": 0.2,
+      "core_sha256_unchanged": true,
+      "max_wing_output_change": 0.0,
+      "tasks": {
+        "no_cce": {
+          "task_1": {
+            "audit_served_accuracy": 0.91,
+            "audit_net_correct": 0.89,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 9,
+            "decision": "all Wings"
+          },
+          "task_2": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.92,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 9,
+            "decision": "all Wings"
+          },
+          "task_3": {
+            "audit_served_accuracy": 0.9066666666666666,
+            "audit_net_correct": 0.8966666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 9,
+            "decision": "introduced"
+          }
+        },
+        "cce": {
+          "task_1": {
+            "audit_served_accuracy": 0.91,
+            "audit_net_correct": 0.89,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 9,
+            "decision": "admitted new Wings"
+          },
+          "task_2": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.92,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 9,
+            "decision": "admitted new Wings"
+          },
+          "task_3": {
+            "audit_served_accuracy": 0.9066666666666666,
+            "audit_net_correct": 0.8966666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 9,
+            "decision": "introduced"
+          }
+        }
+      },
+      "shared": {
+        "task_1": {
+          "audit_accuracy": 0.8233333333333334,
+          "change_from_first": -0.14
+        },
+        "task_2": {
+          "audit_accuracy": 0.95,
+          "change_from_first": -0.01333333333333342
+        },
+        "task_3": {
+          "audit_accuracy": 0.96,
+          "change_from_first": 0.0
+        }
+      }
+    },
+    {
+      "stage": 4,
+      "task": "task_4",
+      "eta": 0.2,
+      "core_sha256_unchanged": true,
+      "max_wing_output_change": 0.0,
+      "tasks": {
+        "no_cce": {
+          "task_1": {
+            "audit_served_accuracy": 0.91,
+            "audit_net_correct": 0.89,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 12,
+            "decision": "all Wings"
+          },
+          "task_2": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.92,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 12,
+            "decision": "all Wings"
+          },
+          "task_3": {
+            "audit_served_accuracy": 0.9066666666666666,
+            "audit_net_correct": 0.8966666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 12,
+            "decision": "all Wings"
+          },
+          "task_4": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.9166666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 12,
+            "decision": "introduced"
+          }
+        },
+        "cce": {
+          "task_1": {
+            "audit_served_accuracy": 0.91,
+            "audit_net_correct": 0.89,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 12,
+            "decision": "admitted new Wings"
+          },
+          "task_2": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.92,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 12,
+            "decision": "admitted new Wings"
+          },
+          "task_3": {
+            "audit_served_accuracy": 0.9066666666666666,
+            "audit_net_correct": 0.8966666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 12,
+            "decision": "admitted new Wings"
+          },
+          "task_4": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.9166666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 12,
+            "decision": "introduced"
+          }
+        }
+      },
+      "shared": {
+        "task_1": {
+          "audit_accuracy": 0.86,
+          "change_from_first": -0.10333333333333339
+        },
+        "task_2": {
+          "audit_accuracy": 0.9133333333333333,
+          "change_from_first": -0.050000000000000044
+        },
+        "task_3": {
+          "audit_accuracy": 0.8766666666666667,
+          "change_from_first": -0.08333333333333326
+        },
+        "task_4": {
+          "audit_accuracy": 0.9466666666666667,
+          "change_from_first": 0.0
+        }
+      }
+    },
+    {
+      "stage": 5,
+      "task": "task_5",
+      "eta": 0.2,
+      "core_sha256_unchanged": true,
+      "max_wing_output_change": 0.0,
+      "tasks": {
+        "no_cce": {
+          "task_1": {
+            "audit_served_accuracy": 0.91,
+            "audit_net_correct": 0.89,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 15,
+            "decision": "all Wings"
+          },
+          "task_2": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.92,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 15,
+            "decision": "all Wings"
+          },
+          "task_3": {
+            "audit_served_accuracy": 0.9066666666666666,
+            "audit_net_correct": 0.8966666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 15,
+            "decision": "all Wings"
+          },
+          "task_4": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.9166666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 15,
+            "decision": "all Wings"
+          },
+          "task_5": {
+            "audit_served_accuracy": 0.9466666666666667,
+            "audit_net_correct": 0.9433333333333334,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 15,
+            "decision": "introduced"
+          }
+        },
+        "cce": {
+          "task_1": {
+            "audit_served_accuracy": 0.91,
+            "audit_net_correct": 0.89,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 15,
+            "decision": "admitted new Wings"
+          },
+          "task_2": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.92,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 15,
+            "decision": "admitted new Wings"
+          },
+          "task_3": {
+            "audit_served_accuracy": 0.9066666666666666,
+            "audit_net_correct": 0.8966666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 15,
+            "decision": "admitted new Wings"
+          },
+          "task_4": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.9166666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 15,
+            "decision": "admitted new Wings"
+          },
+          "task_5": {
+            "audit_served_accuracy": 0.9466666666666667,
+            "audit_net_correct": 0.9433333333333334,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 15,
+            "decision": "introduced"
+          }
+        }
+      },
+      "shared": {
+        "task_1": {
+          "audit_accuracy": 0.82,
+          "change_from_first": -0.14333333333333342
+        },
+        "task_2": {
+          "audit_accuracy": 0.9033333333333333,
+          "change_from_first": -0.06000000000000005
+        },
+        "task_3": {
+          "audit_accuracy": 0.9066666666666666,
+          "change_from_first": -0.053333333333333344
+        },
+        "task_4": {
+          "audit_accuracy": 0.9333333333333333,
+          "change_from_first": -0.013333333333333308
+        },
+        "task_5": {
+          "audit_accuracy": 0.97,
+          "change_from_first": 0.0
+        }
+      }
+    },
+    {
+      "stage": 6,
+      "task": "task_6",
+      "eta": 0.2,
+      "core_sha256_unchanged": true,
+      "max_wing_output_change": 0.0,
+      "tasks": {
+        "no_cce": {
+          "task_1": {
+            "audit_served_accuracy": 0.91,
+            "audit_net_correct": 0.89,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 18,
+            "decision": "all Wings"
+          },
+          "task_2": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.92,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 18,
+            "decision": "all Wings"
+          },
+          "task_3": {
+            "audit_served_accuracy": 0.9066666666666666,
+            "audit_net_correct": 0.8966666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 18,
+            "decision": "all Wings"
+          },
+          "task_4": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.9166666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 18,
+            "decision": "all Wings"
+          },
+          "task_5": {
+            "audit_served_accuracy": 0.9466666666666667,
+            "audit_net_correct": 0.9433333333333334,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 18,
+            "decision": "all Wings"
+          },
+          "task_6": {
+            "audit_served_accuracy": 0.95,
+            "audit_net_correct": 0.94,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 18,
+            "decision": "introduced"
+          }
+        },
+        "cce": {
+          "task_1": {
+            "audit_served_accuracy": 0.91,
+            "audit_net_correct": 0.89,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 18,
+            "decision": "admitted new Wings"
+          },
+          "task_2": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.92,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 18,
+            "decision": "admitted new Wings"
+          },
+          "task_3": {
+            "audit_served_accuracy": 0.9066666666666666,
+            "audit_net_correct": 0.8966666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 18,
+            "decision": "admitted new Wings"
+          },
+          "task_4": {
+            "audit_served_accuracy": 0.92,
+            "audit_net_correct": 0.9166666666666666,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 18,
+            "decision": "admitted new Wings"
+          },
+          "task_5": {
+            "audit_served_accuracy": 0.9466666666666667,
+            "audit_net_correct": 0.9433333333333334,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 18,
+            "decision": "admitted new Wings"
+          },
+          "task_6": {
+            "audit_served_accuracy": 0.95,
+            "audit_net_correct": 0.94,
+            "origin_drift": 0.0,
+            "route_displacement": 0.0,
+            "candidates": 18,
+            "decision": "introduced"
+          }
+        }
+      },
+      "shared": {
+        "task_1": {
+          "audit_accuracy": 0.73,
+          "change_from_first": -0.2333333333333334
+        },
+        "task_2": {
+          "audit_accuracy": 0.8,
+          "change_from_first": -0.16333333333333333
+        },
+        "task_3": {
+          "audit_accuracy": 0.75,
+          "change_from_first": -0.20999999999999996
+        },
+        "task_4": {
+          "audit_accuracy": 0.9566666666666667,
+          "change_from_first": 0.010000000000000009
+        },
+        "task_5": {
+          "audit_accuracy": 0.8966666666666666,
+          "change_from_first": -0.07333333333333336
+        },
+        "task_6": {
+          "audit_accuracy": 0.9733333333333334,
+          "change_from_first": 0.0
+        }
+      }
+    }
+  ],
+  "verdict": {
+    "PD1 Core hash unchanged and Wing outputs bit-identical": true,
+    "PD2 no_cce route displacement reaches 10% for an old task": false,
+    "PD3 cce keeps every old task within E of its origin": true,
+    "PD4 shared network forgets task_1 by at least E": true,
+    "PD5 mean final accuracy over tasks 1-5 (cce, no_cce)": [
+      0.9206666666666667,
+      0.9206666666666667
+    ],
+    "drift-control hypothesis": "supported"
+  },
+  "replicate": 2,
+  "multiseed_preregistration_sha256": "fd8c1ef926d249d383664c982fe7ab26a7b548231d79dd975fcd8fa72e486516"
+}

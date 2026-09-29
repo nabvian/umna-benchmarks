@@ -1,0 +1,13 @@
+Copyright 2026 Koushik Das
+
+The results, text, figures and notebook in this repository are licensed
+under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt them for any purpose, if you give appropriate
+credit ("UMNA benchmark results, Koushik Das"), link to the license, and
+indicate if changes were made.
+
+The UMNA source code is not part of this repository and is not licensed
+here. The datasets the results were computed on belong to their authors
+and are used under their own terms (see README.md).

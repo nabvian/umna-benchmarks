@@ -1,0 +1,324 @@
+{
+  "preregistration_sha256": "fd8c1ef926d249d383664c982fe7ab26a7b548231d79dd975fcd8fa72e486516",
+  "tests": {
+    "n2": {
+      "seed 0": {
+        "verdict": "supported",
+        "wins": 8,
+        "losses": 2,
+        "H2 (reported)": "supported"
+      },
+      "replicates": {
+        "1": {
+          "verdict": "not supported",
+          "wins": 4,
+          "losses": 8,
+          "H2 (reported)": "not supported"
+        },
+        "2": {
+          "verdict": "partly supported",
+          "wins": 8,
+          "losses": 3,
+          "H2 (reported)": "not testable: composition helps on no dataset"
+        },
+        "3": {
+          "verdict": "partly supported",
+          "wins": 6,
+          "losses": 2,
+          "H2 (reported)": "not supported"
+        },
+        "4": {
+          "verdict": "partly supported",
+          "wins": 7,
+          "losses": 5,
+          "H2 (reported)": "not testable: composition helps on no dataset"
+        },
+        "5": {
+          "verdict": "partly supported",
+          "wins": 7,
+          "losses": 3,
+          "H2 (reported)": "not supported"
+        }
+      },
+      "supported": 0,
+      "rule": "does not replicate"
+    },
+    "c2": {
+      "seed 0": {
+        "verdict": "supported",
+        "harmful promoted": {
+          "no_gate": 15,
+          "step_point": 0,
+          "cce": 0
+        },
+        "datasets judged": 3
+      },
+      "replicates": {
+        "1": {
+          "verdict": "supported",
+          "harmful promoted": {
+            "no_gate": 15,
+            "step_point": 2,
+            "cce": 1
+          },
+          "datasets judged": 3
+        },
+        "2": {
+          "verdict": "supported",
+          "harmful promoted": {
+            "no_gate": 15,
+            "step_point": 1,
+            "cce": 1
+          },
+          "datasets judged": 3
+        },
+        "3": {
+          "verdict": "supported",
+          "harmful promoted": {
+            "no_gate": 15,
+            "step_point": 0,
+            "cce": 0
+          },
+          "datasets judged": 3
+        },
+        "4": {
+          "verdict": "supported",
+          "harmful promoted": {
+            "no_gate": 15,
+            "step_point": 1,
+            "cce": 0
+          },
+          "datasets judged": 3
+        },
+        "5": {
+          "verdict": "supported",
+          "harmful promoted": {
+            "no_gate": 15,
+            "step_point": 0,
+            "cce": 0
+          },
+          "datasets judged": 3
+        }
+      },
+      "supported": 5,
+      "rule": "replicates"
+    },
+    "capability_routing": {
+      "seed 0": {
+        "verdict": "supported",
+        "own-task hit rate, lowest cell": 1.0,
+        "vs gate_top1": [
+          7,
+          0
+        ],
+        "vs gate_top2": [
+          8,
+          0
+        ]
+      },
+      "replicates": {
+        "1": {
+          "verdict": "supported",
+          "own-task hit rate, lowest cell": 1.0,
+          "vs gate_top1": [
+            6,
+            0
+          ],
+          "vs gate_top2": [
+            8,
+            0
+          ]
+        },
+        "2": {
+          "verdict": "not supported",
+          "own-task hit rate, lowest cell": 1.0,
+          "vs gate_top1": [
+            8,
+            0
+          ],
+          "vs gate_top2": [
+            8,
+            0
+          ]
+        },
+        "3": {
+          "verdict": "supported",
+          "own-task hit rate, lowest cell": 1.0,
+          "vs gate_top1": [
+            7,
+            0
+          ],
+          "vs gate_top2": [
+            7,
+            1
+          ]
+        },
+        "4": {
+          "verdict": "supported",
+          "own-task hit rate, lowest cell": 1.0,
+          "vs gate_top1": [
+            8,
+            0
+          ],
+          "vs gate_top2": [
+            8,
+            0
+          ]
+        },
+        "5": {
+          "verdict": "supported",
+          "own-task hit rate, lowest cell": 1.0,
+          "vs gate_top1": [
+            7,
+            0
+          ],
+          "vs gate_top2": [
+            8,
+            0
+          ]
+        }
+      },
+      "supported": 4,
+      "rule": "partly replicates"
+    },
+    "drift": {
+      "seed 0": {
+        "verdict": "supported",
+        "shared network task_1 change": -0.22000000000000008,
+        "worst cce drift from origin": -0.01666666666666672,
+        "PD5 (cce, no_cce)": [
+          0.8933333333333333,
+          0.8953333333333333
+        ]
+      },
+      "replicates": {
+        "1": {
+          "verdict": "supported",
+          "shared network task_1 change": -0.2766666666666666,
+          "worst cce drift from origin": -0.0033333333333332993,
+          "PD5 (cce, no_cce)": [
+            0.9053333333333334,
+            0.906
+          ]
+        },
+        "2": {
+          "verdict": "supported",
+          "shared network task_1 change": -0.2333333333333334,
+          "worst cce drift from origin": 0.0,
+          "PD5 (cce, no_cce)": [
+            0.9206666666666667,
+            0.9206666666666667
+          ]
+        },
+        "3": {
+          "verdict": "supported",
+          "shared network task_1 change": -0.18666666666666676,
+          "worst cce drift from origin": -0.023333333333333317,
+          "PD5 (cce, no_cce)": [
+            0.8713333333333333,
+            0.866
+          ]
+        },
+        "4": {
+          "verdict": "supported",
+          "shared network task_1 change": -0.33666666666666667,
+          "worst cce drift from origin": -0.020000000000000018,
+          "PD5 (cce, no_cce)": [
+            0.9179999999999999,
+            0.9233333333333332
+          ]
+        },
+        "5": {
+          "verdict": "not supported",
+          "shared network task_1 change": -0.043333333333333335,
+          "worst cce drift from origin": 0.0,
+          "PD5 (cce, no_cce)": [
+            0.9066666666666666,
+            0.9073333333333334
+          ]
+        }
+      },
+      "supported": 4,
+      "rule": "partly replicates"
+    },
+    "slow_harm_fine": {
+      "seed 0": {
+        "verdict": "supported",
+        "per dataset": {
+          "spambase": "supported",
+          "banknote-authentication": "not exercised",
+          "qsar-biodeg": "supported"
+        },
+        "datasets served eroded": {
+          "cce_step_only": 2,
+          "cce": 0
+        }
+      },
+      "replicates": {
+        "1": {
+          "verdict": "not supported",
+          "per dataset": {
+            "spambase": "supported",
+            "banknote-authentication": "not exercised",
+            "qsar-biodeg": "not supported"
+          },
+          "datasets served eroded": {
+            "cce_step_only": 2,
+            "cce": 1
+          }
+        },
+        "2": {
+          "verdict": "supported",
+          "per dataset": {
+            "spambase": "supported",
+            "banknote-authentication": "not exercised",
+            "qsar-biodeg": "supported"
+          },
+          "datasets served eroded": {
+            "cce_step_only": 2,
+            "cce": 0
+          }
+        },
+        "3": {
+          "verdict": "not supported",
+          "per dataset": {
+            "spambase": "supported",
+            "banknote-authentication": "not exercised",
+            "qsar-biodeg": "not supported"
+          },
+          "datasets served eroded": {
+            "cce_step_only": 2,
+            "cce": 1
+          }
+        },
+        "4": {
+          "verdict": "supported",
+          "per dataset": {
+            "spambase": "supported",
+            "banknote-authentication": "not exercised",
+            "qsar-biodeg": "supported"
+          },
+          "datasets served eroded": {
+            "cce_step_only": 2,
+            "cce": 0
+          }
+        },
+        "5": {
+          "verdict": "not supported",
+          "per dataset": {
+            "spambase": "supported",
+            "banknote-authentication": "not exercised",
+            "qsar-biodeg": "not supported"
+          },
+          "datasets served eroded": {
+            "cce_step_only": 2,
+            "cce": 1
+          }
+        }
+      },
+      "supported": 2,
+      "rule": "does not replicate"
+    }
+  },
+  "drift seed 0 reproduces section 13": true
+}

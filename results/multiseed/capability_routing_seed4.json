@@ -1,0 +1,1289 @@
+{
+  "preregistration_sha256": "e7700b9db43b4681dd030f143024dc6a55ac3aa0bded2932a3ebfd0279b531a6",
+  "tuning_budget": {
+    "nice_r": 5,
+    "others": 0
+  },
+  "base": {
+    "task_1": {
+      "eta": 0.1,
+      "cells": {
+        "tight": {
+          "nice_r": {
+            "net_correct_rate": 0.892,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9826839826839827,
+            "mean_flops": 21360.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 1.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.764,
+            "coverage": 0.86,
+            "selective_accuracy": 0.9441860465116279,
+            "mean_flops": 21360.0,
+            "own_task_share": 0.398,
+            "own_task_hit_rate": 0.398,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.724,
+            "coverage": 0.84,
+            "selective_accuracy": 0.930952380952381,
+            "mean_flops": 42720.0,
+            "own_task_share": 0.353,
+            "own_task_hit_rate": 0.62,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9913419913419913,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "topk": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9913419913419913,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gates": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9913419913419913,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "beam": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9913419913419913,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "exhaustive": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9913419913419913,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9913419913419913,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "random": {
+            "net_correct_rate": 0.286,
+            "coverage": 0.398,
+            "selective_accuracy": 0.8592964824120602,
+            "mean_flops": 21360.0,
+            "own_task_share": 0.258,
+            "own_task_hit_rate": 0.258,
+            "graph_size": 1.0
+          }
+        },
+        "loose": {
+          "nice_r": {
+            "net_correct_rate": 0.936,
+            "coverage": 0.94,
+            "selective_accuracy": 0.997872340425532,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.906,
+            "coverage": 0.958,
+            "selective_accuracy": 0.9728601252609603,
+            "mean_flops": 56988.48,
+            "own_task_share": 0.374,
+            "own_task_hit_rate": 0.374,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.862,
+            "coverage": 0.938,
+            "selective_accuracy": 0.9594882729211087,
+            "mean_flops": 101759.04,
+            "own_task_share": 0.346,
+            "own_task_hit_rate": 0.538,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.934,
+            "coverage": 0.938,
+            "selective_accuracy": 0.997867803837953,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "topk": {
+            "net_correct_rate": 0.936,
+            "coverage": 0.94,
+            "selective_accuracy": 0.997872340425532,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gates": {
+            "net_correct_rate": 0.922,
+            "coverage": 0.926,
+            "selective_accuracy": 0.9978401727861771,
+            "mean_flops": 128160.0,
+            "own_task_share": 0.75,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 4.0
+          },
+          "beam": {
+            "net_correct_rate": 0.934,
+            "coverage": 0.938,
+            "selective_accuracy": 0.997867803837953,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "exhaustive": {
+            "net_correct_rate": 0.934,
+            "coverage": 0.938,
+            "selective_accuracy": 0.997867803837953,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.934,
+            "coverage": 0.938,
+            "selective_accuracy": 0.997867803837953,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "random": {
+            "net_correct_rate": 0.226,
+            "coverage": 0.31,
+            "selective_accuracy": 0.864516129032258,
+            "mean_flops": 35030.4,
+            "own_task_share": 0.246,
+            "own_task_hit_rate": 0.246,
+            "graph_size": 1.0
+          }
+        }
+      }
+    },
+    "task_2": {
+      "eta": 0.05,
+      "cells": {
+        "tight": {
+          "nice_r": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9850427350427351,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.574,
+            "coverage": 0.766,
+            "selective_accuracy": 0.8746736292428199,
+            "mean_flops": 21360.0,
+            "own_task_share": 0.362,
+            "own_task_hit_rate": 0.362,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.45,
+            "coverage": 0.674,
+            "selective_accuracy": 0.8338278931750742,
+            "mean_flops": 42720.0,
+            "own_task_share": 0.302,
+            "own_task_hit_rate": 0.552,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9850427350427351,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "topk": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9850427350427351,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gates": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9850427350427351,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "beam": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9850427350427351,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "exhaustive": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9850427350427351,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9850427350427351,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "random": {
+            "net_correct_rate": 0.242,
+            "coverage": 0.378,
+            "selective_accuracy": 0.8201058201058201,
+            "mean_flops": 21360.0,
+            "own_task_share": 0.24,
+            "own_task_hit_rate": 0.24,
+            "graph_size": 1.0
+          }
+        },
+        "loose": {
+          "nice_r": {
+            "net_correct_rate": 0.926,
+            "coverage": 0.934,
+            "selective_accuracy": 0.9957173447537473,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.86,
+            "coverage": 0.916,
+            "selective_accuracy": 0.9694323144104804,
+            "mean_flops": 59380.8,
+            "own_task_share": 0.508,
+            "own_task_hit_rate": 0.508,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.774,
+            "coverage": 0.866,
+            "selective_accuracy": 0.9468822170900693,
+            "mean_flops": 103211.52,
+            "own_task_share": 0.445,
+            "own_task_hit_rate": 0.702,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.926,
+            "coverage": 0.93,
+            "selective_accuracy": 0.9978494623655914,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "topk": {
+            "net_correct_rate": 0.926,
+            "coverage": 0.934,
+            "selective_accuracy": 0.9957173447537473,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gates": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.928,
+            "selective_accuracy": 0.9892241379310345,
+            "mean_flops": 127348.32,
+            "own_task_share": 0.7595,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.962
+          },
+          "beam": {
+            "net_correct_rate": 0.926,
+            "coverage": 0.93,
+            "selective_accuracy": 0.9978494623655914,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "exhaustive": {
+            "net_correct_rate": 0.926,
+            "coverage": 0.93,
+            "selective_accuracy": 0.9978494623655914,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.926,
+            "coverage": 0.93,
+            "selective_accuracy": 0.9978494623655914,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "random": {
+            "net_correct_rate": 0.268,
+            "coverage": 0.396,
+            "selective_accuracy": 0.8383838383838383,
+            "mean_flops": 35030.4,
+            "own_task_share": 0.252,
+            "own_task_hit_rate": 0.252,
+            "graph_size": 1.0
+          }
+        }
+      }
+    },
+    "task_3": {
+      "eta": 0.2,
+      "cells": {
+        "tight": {
+          "nice_r": {
+            "net_correct_rate": 0.872,
+            "coverage": 0.976,
+            "selective_accuracy": 0.9467213114754098,
+            "mean_flops": 21360.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 1.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.736,
+            "coverage": 0.848,
+            "selective_accuracy": 0.9339622641509434,
+            "mean_flops": 21360.0,
+            "own_task_share": 0.35,
+            "own_task_hit_rate": 0.35,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.63,
+            "coverage": 0.822,
+            "selective_accuracy": 0.8832116788321168,
+            "mean_flops": 42720.0,
+            "own_task_share": 0.277,
+            "own_task_hit_rate": 0.486,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.888,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9743589743589743,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "topk": {
+            "net_correct_rate": 0.888,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9743589743589743,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gates": {
+            "net_correct_rate": 0.888,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9743589743589743,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "beam": {
+            "net_correct_rate": 0.888,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9743589743589743,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "exhaustive": {
+            "net_correct_rate": 0.888,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9743589743589743,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.888,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9743589743589743,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "random": {
+            "net_correct_rate": 0.21,
+            "coverage": 0.338,
+            "selective_accuracy": 0.8106508875739645,
+            "mean_flops": 21360.0,
+            "own_task_share": 0.258,
+            "own_task_hit_rate": 0.258,
+            "graph_size": 1.0
+          }
+        },
+        "loose": {
+          "nice_r": {
+            "net_correct_rate": 0.894,
+            "coverage": 0.902,
+            "selective_accuracy": 0.9955654101995566,
+            "mean_flops": 64080.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 1.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.852,
+            "coverage": 0.932,
+            "selective_accuracy": 0.9570815450643777,
+            "mean_flops": 56988.48,
+            "own_task_share": 0.61,
+            "own_task_hit_rate": 0.61,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.794,
+            "coverage": 0.918,
+            "selective_accuracy": 0.9324618736383442,
+            "mean_flops": 100733.76,
+            "own_task_share": 0.483,
+            "own_task_hit_rate": 0.774,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9913419913419913,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "topk": {
+            "net_correct_rate": 0.894,
+            "coverage": 0.914,
+            "selective_accuracy": 0.9890590809628009,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gates": {
+            "net_correct_rate": 0.9,
+            "coverage": 0.928,
+            "selective_accuracy": 0.9849137931034483,
+            "mean_flops": 128160.0,
+            "own_task_share": 0.75,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 4.0
+          },
+          "beam": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9913419913419913,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "exhaustive": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9913419913419913,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9913419913419913,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "random": {
+            "net_correct_rate": 0.136,
+            "coverage": 0.244,
+            "selective_accuracy": 0.7786885245901639,
+            "mean_flops": 35030.4,
+            "own_task_share": 0.234,
+            "own_task_hit_rate": 0.234,
+            "graph_size": 1.0
+          }
+        }
+      }
+    },
+    "task_4": {
+      "eta": 0.05,
+      "cells": {
+        "tight": {
+          "nice_r": {
+            "net_correct_rate": 0.912,
+            "coverage": 0.944,
+            "selective_accuracy": 0.9830508474576272,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.57,
+            "coverage": 0.738,
+            "selective_accuracy": 0.8861788617886179,
+            "mean_flops": 21360.0,
+            "own_task_share": 0.394,
+            "own_task_hit_rate": 0.394,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.65,
+            "coverage": 0.842,
+            "selective_accuracy": 0.8859857482185273,
+            "mean_flops": 42720.0,
+            "own_task_share": 0.345,
+            "own_task_hit_rate": 0.588,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.912,
+            "coverage": 0.944,
+            "selective_accuracy": 0.9830508474576272,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "topk": {
+            "net_correct_rate": 0.912,
+            "coverage": 0.944,
+            "selective_accuracy": 0.9830508474576272,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gates": {
+            "net_correct_rate": 0.912,
+            "coverage": 0.944,
+            "selective_accuracy": 0.9830508474576272,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "beam": {
+            "net_correct_rate": 0.912,
+            "coverage": 0.944,
+            "selective_accuracy": 0.9830508474576272,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "exhaustive": {
+            "net_correct_rate": 0.912,
+            "coverage": 0.944,
+            "selective_accuracy": 0.9830508474576272,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.912,
+            "coverage": 0.944,
+            "selective_accuracy": 0.9830508474576272,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "random": {
+            "net_correct_rate": 0.246,
+            "coverage": 0.358,
+            "selective_accuracy": 0.8435754189944135,
+            "mean_flops": 21360.0,
+            "own_task_share": 0.244,
+            "own_task_hit_rate": 0.244,
+            "graph_size": 1.0
+          }
+        },
+        "loose": {
+          "nice_r": {
+            "net_correct_rate": 0.928,
+            "coverage": 0.952,
+            "selective_accuracy": 0.9873949579831933,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.89,
+            "coverage": 0.95,
+            "selective_accuracy": 0.968421052631579,
+            "mean_flops": 59124.48,
+            "own_task_share": 0.334,
+            "own_task_hit_rate": 0.334,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.786,
+            "coverage": 0.886,
+            "selective_accuracy": 0.9435665914221218,
+            "mean_flops": 105262.08,
+            "own_task_share": 0.341,
+            "own_task_hit_rate": 0.556,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.93,
+            "coverage": 0.946,
+            "selective_accuracy": 0.9915433403805497,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "topk": {
+            "net_correct_rate": 0.928,
+            "coverage": 0.952,
+            "selective_accuracy": 0.9873949579831933,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gates": {
+            "net_correct_rate": 0.91,
+            "coverage": 0.918,
+            "selective_accuracy": 0.9956427015250545,
+            "mean_flops": 128160.0,
+            "own_task_share": 0.75,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 4.0
+          },
+          "beam": {
+            "net_correct_rate": 0.93,
+            "coverage": 0.946,
+            "selective_accuracy": 0.9915433403805497,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "exhaustive": {
+            "net_correct_rate": 0.93,
+            "coverage": 0.946,
+            "selective_accuracy": 0.9915433403805497,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.93,
+            "coverage": 0.946,
+            "selective_accuracy": 0.9915433403805497,
+            "mean_flops": 106800.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 3.0
+          },
+          "random": {
+            "net_correct_rate": 0.204,
+            "coverage": 0.316,
+            "selective_accuracy": 0.8227848101265823,
+            "mean_flops": 35030.4,
+            "own_task_share": 0.268,
+            "own_task_hit_rate": 0.268,
+            "graph_size": 1.0
+          }
+        }
+      }
+    }
+  },
+  "base_flops": {
+    "t1_factors": 21360.0,
+    "t1_fourier": 21360.0,
+    "t1_general": 64080.0,
+    "t2_karhunen": 21360.0,
+    "t2_morphological": 21360.0,
+    "t2_general": 64080.0,
+    "t3_pixel": 21360.0,
+    "t3_zernike": 21360.0,
+    "t3_general": 64080.0,
+    "t4_factors": 21360.0,
+    "t4_fourier": 21360.0,
+    "t4_general": 64080.0
+  },
+  "distractors": {
+    "task_1": {
+      "eta": 0.2,
+      "cells": {
+        "tight": {
+          "nice_r": {
+            "net_correct_rate": 0.892,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9826839826839827,
+            "mean_flops": 21360.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 1.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.77,
+            "coverage": 0.858,
+            "selective_accuracy": 0.9487179487179487,
+            "mean_flops": 21360.0,
+            "own_task_share": 0.404,
+            "own_task_hit_rate": 0.404,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.652,
+            "coverage": 0.732,
+            "selective_accuracy": 0.9453551912568307,
+            "mean_flops": 42720.0,
+            "own_task_share": 0.356,
+            "own_task_hit_rate": 0.618,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9913419913419913,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "topk": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9913419913419913,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.924,
+            "selective_accuracy": 0.9913419913419913,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          }
+        },
+        "loose": {
+          "nice_r": {
+            "net_correct_rate": 0.928,
+            "coverage": 0.964,
+            "selective_accuracy": 0.9813278008298755,
+            "mean_flops": 64080.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 1.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.906,
+            "coverage": 0.954,
+            "selective_accuracy": 0.9748427672955975,
+            "mean_flops": 56903.04,
+            "own_task_share": 0.378,
+            "own_task_hit_rate": 0.378,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.86,
+            "coverage": 0.932,
+            "selective_accuracy": 0.9613733905579399,
+            "mean_flops": 101844.48,
+            "own_task_share": 0.345,
+            "own_task_hit_rate": 0.536,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.932,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9978632478632479,
+            "mean_flops": 128160.0,
+            "own_task_share": 0.5,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 4.0
+          },
+          "topk": {
+            "net_correct_rate": 0.936,
+            "coverage": 0.94,
+            "selective_accuracy": 0.997872340425532,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.936,
+            "coverage": 0.94,
+            "selective_accuracy": 0.997872340425532,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          }
+        }
+      }
+    },
+    "task_2": {
+      "eta": 0.1,
+      "cells": {
+        "tight": {
+          "nice_r": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9850427350427351,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.584,
+            "coverage": 0.764,
+            "selective_accuracy": 0.8821989528795812,
+            "mean_flops": 21360.0,
+            "own_task_share": 0.356,
+            "own_task_hit_rate": 0.356,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.47,
+            "coverage": 0.678,
+            "selective_accuracy": 0.8466076696165191,
+            "mean_flops": 42720.0,
+            "own_task_share": 0.303,
+            "own_task_hit_rate": 0.552,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9850427350427351,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "topk": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9850427350427351,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.908,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9850427350427351,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          }
+        },
+        "loose": {
+          "nice_r": {
+            "net_correct_rate": 0.924,
+            "coverage": 0.928,
+            "selective_accuracy": 0.9978448275862069,
+            "mean_flops": 64080.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 1.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.86,
+            "coverage": 0.916,
+            "selective_accuracy": 0.9694323144104804,
+            "mean_flops": 59209.92,
+            "own_task_share": 0.51,
+            "own_task_hit_rate": 0.51,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.774,
+            "coverage": 0.866,
+            "selective_accuracy": 0.9468822170900693,
+            "mean_flops": 103467.84,
+            "own_task_share": 0.446,
+            "own_task_hit_rate": 0.704,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.93,
+            "coverage": 0.938,
+            "selective_accuracy": 0.9957356076759062,
+            "mean_flops": 128160.0,
+            "own_task_share": 0.5,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 4.0
+          },
+          "topk": {
+            "net_correct_rate": 0.926,
+            "coverage": 0.934,
+            "selective_accuracy": 0.9957173447537473,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.926,
+            "coverage": 0.934,
+            "selective_accuracy": 0.9957173447537473,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          }
+        }
+      }
+    },
+    "task_3": {
+      "eta": 0.2,
+      "cells": {
+        "tight": {
+          "nice_r": {
+            "net_correct_rate": 0.872,
+            "coverage": 0.976,
+            "selective_accuracy": 0.9467213114754098,
+            "mean_flops": 21360.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 1.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.738,
+            "coverage": 0.85,
+            "selective_accuracy": 0.9341176470588235,
+            "mean_flops": 21360.0,
+            "own_task_share": 0.338,
+            "own_task_hit_rate": 0.338,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.662,
+            "coverage": 0.838,
+            "selective_accuracy": 0.8949880668257757,
+            "mean_flops": 42720.0,
+            "own_task_share": 0.274,
+            "own_task_hit_rate": 0.48,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.888,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9743589743589743,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "topk": {
+            "net_correct_rate": 0.888,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9743589743589743,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.888,
+            "coverage": 0.936,
+            "selective_accuracy": 0.9743589743589743,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          }
+        },
+        "loose": {
+          "nice_r": {
+            "net_correct_rate": 0.894,
+            "coverage": 0.902,
+            "selective_accuracy": 0.9955654101995566,
+            "mean_flops": 64080.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 1.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.85,
+            "coverage": 0.93,
+            "selective_accuracy": 0.956989247311828,
+            "mean_flops": 56732.16,
+            "own_task_share": 0.61,
+            "own_task_hit_rate": 0.61,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.802,
+            "coverage": 0.918,
+            "selective_accuracy": 0.9368191721132898,
+            "mean_flops": 101075.52,
+            "own_task_share": 0.482,
+            "own_task_hit_rate": 0.772,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.892,
+            "coverage": 0.916,
+            "selective_accuracy": 0.9868995633187773,
+            "mean_flops": 128160.0,
+            "own_task_share": 0.5,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 4.0
+          },
+          "topk": {
+            "net_correct_rate": 0.894,
+            "coverage": 0.914,
+            "selective_accuracy": 0.9890590809628009,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.894,
+            "coverage": 0.914,
+            "selective_accuracy": 0.9890590809628009,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          }
+        }
+      }
+    },
+    "task_4": {
+      "eta": 0.05,
+      "cells": {
+        "tight": {
+          "nice_r": {
+            "net_correct_rate": 0.912,
+            "coverage": 0.944,
+            "selective_accuracy": 0.9830508474576272,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.608,
+            "coverage": 0.752,
+            "selective_accuracy": 0.9042553191489362,
+            "mean_flops": 21360.0,
+            "own_task_share": 0.388,
+            "own_task_hit_rate": 0.388,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.602,
+            "coverage": 0.782,
+            "selective_accuracy": 0.8849104859335039,
+            "mean_flops": 42720.0,
+            "own_task_share": 0.35,
+            "own_task_hit_rate": 0.594,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.912,
+            "coverage": 0.944,
+            "selective_accuracy": 0.9830508474576272,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "topk": {
+            "net_correct_rate": 0.912,
+            "coverage": 0.944,
+            "selective_accuracy": 0.9830508474576272,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.912,
+            "coverage": 0.944,
+            "selective_accuracy": 0.9830508474576272,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          }
+        },
+        "loose": {
+          "nice_r": {
+            "net_correct_rate": 0.912,
+            "coverage": 0.944,
+            "selective_accuracy": 0.9830508474576272,
+            "mean_flops": 42720.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "gate_top1": {
+            "net_correct_rate": 0.882,
+            "coverage": 0.942,
+            "selective_accuracy": 0.9681528662420382,
+            "mean_flops": 59124.48,
+            "own_task_share": 0.322,
+            "own_task_hit_rate": 0.322,
+            "graph_size": 1.0
+          },
+          "gate_top2": {
+            "net_correct_rate": 0.842,
+            "coverage": 0.914,
+            "selective_accuracy": 0.9606126914660832,
+            "mean_flops": 105176.64,
+            "own_task_share": 0.34,
+            "own_task_hit_rate": 0.554,
+            "graph_size": 2.0
+          },
+          "greedy": {
+            "net_correct_rate": 0.932,
+            "coverage": 0.952,
+            "selective_accuracy": 0.9894957983193278,
+            "mean_flops": 128160.0,
+            "own_task_share": 0.5,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 4.0
+          },
+          "topk": {
+            "net_correct_rate": 0.928,
+            "coverage": 0.952,
+            "selective_accuracy": 0.9873949579831933,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          },
+          "oracle_map": {
+            "net_correct_rate": 0.928,
+            "coverage": 0.952,
+            "selective_accuracy": 0.9873949579831933,
+            "mean_flops": 85440.0,
+            "own_task_share": 1.0,
+            "own_task_hit_rate": 1.0,
+            "graph_size": 2.0
+          }
+        }
+      }
+    }
+  },
+  "distractors_flops": {
+    "t1_factors": 21360.0,
+    "t1_fourier": 21360.0,
+    "t1_general": 64080.0,
+    "t2_karhunen": 21360.0,
+    "t2_morphological": 21360.0,
+    "t2_general": 64080.0,
+    "t3_pixel": 21360.0,
+    "t3_zernike": 21360.0,
+    "t3_general": 64080.0,
+    "t4_factors": 21360.0,
+    "t4_fourier": 21360.0,
+    "t4_general": 64080.0,
+    "noise_1": 21360.0,
+    "noise_2": 21360.0,
+    "noise_3": 21360.0,
+    "noise_4": 21360.0,
+    "noise_5": 21360.0,
+    "noise_6": 21360.0,
+    "noise_7": 21360.0,
+    "noise_8": 21360.0
+  },
+  "verdict": {
+    "PR1 nice_r finds its task's Wings": true,
+    "PR2 nice_r within 0.02 of oracle_map": true,
+    "PR3 nice_r vs gate_top1": {
+      "wins": 8,
+      "losses": 0,
+      "verdict": "supported"
+    },
+    "PR3 nice_r vs gate_top2 (reported)": {
+      "wins": 8,
+      "losses": 0,
+      "verdict": "supported"
+    },
+    "PR4 distractors": true,
+    "capability routing hypothesis": "supported"
+  },
+  "replicate": 4,
+  "multiseed_preregistration_sha256": "fd8c1ef926d249d383664c982fe7ab26a7b548231d79dd975fcd8fa72e486516"
+}

@@ -1,0 +1,551 @@
+{
+  "preregistration_sha256": "9f6d646772581f6bfb26cd532609c672eacf15c6e7fac2e99d0461004a38993e",
+  "costs": {
+    "flops": {
+      "half_a": 848.0,
+      "half_b": 848.0,
+      "half_a_copy": 848.0,
+      "half_b_copy": 848.0,
+      "distractor": 848.0,
+      "generalist": 2544.0
+    },
+    "budgets": {
+      "tight": 2120.0,
+      "loose": 5512.0
+    }
+  },
+  "majority_floor": 0.526,
+  "truth": {
+    "mean": {
+      "half_a": {
+        "accuracy": 0.724,
+        "utility": 0.6279286438524723,
+        "log_loss": 0.5517562667303733
+      },
+      "half_b": {
+        "accuracy": 0.702,
+        "utility": 0.6235821441411972,
+        "log_loss": 0.5718618908178607
+      },
+      "half_a_copy": {
+        "accuracy": 0.726,
+        "utility": 0.6239573835134506,
+        "log_loss": 0.5495156289966813
+      },
+      "half_a + half_b": {
+        "accuracy": 0.918,
+        "utility": 0.6257553939968348,
+        "log_loss": 0.4882607685413982
+      },
+      "half_a + half_a_copy": {
+        "accuracy": 0.726,
+        "utility": 0.6259430136829615,
+        "log_loss": 0.5501375099293484
+      },
+      "all four halves": {
+        "accuracy": 0.91,
+        "utility": 0.6250401465557516,
+        "log_loss": 0.48912521020423705
+      },
+      "generalist": {
+        "accuracy": 0.952,
+        "utility": 0.8436644618683494,
+        "log_loss": 0.2523752005972966
+      },
+      "generalist + half_a + half_b": {
+        "accuracy": 0.944,
+        "utility": 0.6983917499540064,
+        "log_loss": 0.3856709287155243
+      },
+      "distractor": {
+        "accuracy": 0.5,
+        "utility": 0.5007155638337135,
+        "log_loss": 0.6923061636931026
+      }
+    },
+    "log-odds": {
+      "half_a": {
+        "accuracy": 0.724,
+        "utility": 0.6279286438524723,
+        "log_loss": 0.5517562667303733
+      },
+      "half_b": {
+        "accuracy": 0.702,
+        "utility": 0.6235821441411972,
+        "log_loss": 0.5718618908178605
+      },
+      "half_a_copy": {
+        "accuracy": 0.726,
+        "utility": 0.6239573835134506,
+        "log_loss": 0.5495156289966813
+      },
+      "half_a + half_b": {
+        "accuracy": 0.918,
+        "utility": 0.732317148625324,
+        "log_loss": 0.35703738121783885
+      },
+      "half_a + half_a_copy": {
+        "accuracy": 0.726,
+        "utility": 0.6792529847611547,
+        "log_loss": 0.61672916243375
+      },
+      "all four halves": {
+        "accuracy": 0.912,
+        "utility": 0.815720463526197,
+        "log_loss": 0.2919566388299935
+      },
+      "generalist": {
+        "accuracy": 0.952,
+        "utility": 0.8436644618683494,
+        "log_loss": 0.25237520059729657
+      },
+      "generalist + half_a + half_b": {
+        "accuracy": 0.942,
+        "utility": 0.8766134429039956,
+        "log_loss": 0.26137533569932014
+      },
+      "distractor": {
+        "accuracy": 0.5,
+        "utility": 0.5007155638337135,
+        "log_loss": 0.6923061636931026
+      }
+    }
+  },
+  "arms": {
+    "mean/tight": {
+      "greedy": {
+        "coverage": 0.522,
+        "selective_accuracy": 0.8352490421455939,
+        "accepted": 261,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.2582653527469374,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 1.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      },
+      "density": {
+        "coverage": 0.522,
+        "selective_accuracy": 0.8352490421455939,
+        "accepted": 261,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.2582653527469374,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 1.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      },
+      "topk": {
+        "coverage": 0.522,
+        "selective_accuracy": 0.8352490421455939,
+        "accepted": 261,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.2582653527469374,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 1.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      },
+      "gates": {
+        "coverage": 0.522,
+        "selective_accuracy": 0.8352490421455939,
+        "accepted": 261,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.2582653527469374,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 1.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      },
+      "pairs": {
+        "coverage": 0.518,
+        "selective_accuracy": 0.833976833976834,
+        "accepted": 259,
+        "admission_rate": 1.0,
+        "graph_size": 1.65,
+        "regret": 0.25740762625494973,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 0.65,
+        "generalist_rate": 0.0,
+        "mean_flops": 1399.2,
+        "calibration_rows": 500
+      },
+      "beam": {
+        "coverage": 0.522,
+        "selective_accuracy": 0.8352490421455939,
+        "accepted": 261,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.2582653527469374,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 1.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      },
+      "exhaustive": {
+        "coverage": 0.522,
+        "selective_accuracy": 0.8352490421455939,
+        "accepted": 261,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.2582653527469374,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 1.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      },
+      "nice_r": {
+        "coverage": 0.522,
+        "selective_accuracy": 0.8352490421455939,
+        "accepted": 261,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.2582653527469374,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 1.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      }
+    },
+    "mean/loose": {
+      "greedy": {
+        "coverage": 0.954,
+        "selective_accuracy": 0.9622641509433962,
+        "accepted": 477,
+        "admission_rate": 1.0,
+        "graph_size": 1.0,
+        "regret": 0.040543904561549424,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 2544.0,
+        "calibration_rows": 500
+      },
+      "density": {
+        "coverage": 0.954,
+        "selective_accuracy": 0.9622641509433962,
+        "accepted": 477,
+        "admission_rate": 1.0,
+        "graph_size": 1.0,
+        "regret": 0.040543904561549424,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 2544.0,
+        "calibration_rows": 500
+      },
+      "topk": {
+        "coverage": 0.97,
+        "selective_accuracy": 0.9216494845360824,
+        "accepted": 485,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.14841181356948802,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 3392.0,
+        "calibration_rows": 500
+      },
+      "gates": {
+        "coverage": 0.992,
+        "selective_accuracy": 0.9233870967741935,
+        "accepted": 496,
+        "admission_rate": 1.0,
+        "graph_size": 4.0,
+        "regret": 0.20414764044235925,
+        "complementary_pair_rate": 1.0,
+        "redundant_pair_rate": 1.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 5088.0,
+        "calibration_rows": 500
+      },
+      "pairs": {
+        "coverage": 0.954,
+        "selective_accuracy": 0.9622641509433962,
+        "accepted": 477,
+        "admission_rate": 1.0,
+        "graph_size": 1.0,
+        "regret": 0.040543904561549424,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 2544.0,
+        "calibration_rows": 500
+      },
+      "beam": {
+        "coverage": 0.954,
+        "selective_accuracy": 0.9622641509433962,
+        "accepted": 477,
+        "admission_rate": 1.0,
+        "graph_size": 1.0,
+        "regret": 0.040543904561549424,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 2544.0,
+        "calibration_rows": 500
+      },
+      "exhaustive": {
+        "coverage": 0.954,
+        "selective_accuracy": 0.9622641509433962,
+        "accepted": 477,
+        "admission_rate": 1.0,
+        "graph_size": 1.0,
+        "regret": 0.040543904561549424,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 2544.0,
+        "calibration_rows": 500
+      },
+      "nice_r": {
+        "coverage": 0.954,
+        "selective_accuracy": 0.9622641509433962,
+        "accepted": 477,
+        "admission_rate": 1.0,
+        "graph_size": 1.0,
+        "regret": 0.040543904561549424,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 2544.0,
+        "calibration_rows": 500
+      }
+    },
+    "log-odds/tight": {
+      "greedy": {
+        "coverage": 0.978,
+        "selective_accuracy": 0.9284253578732107,
+        "accepted": 489,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.22420671298250447,
+        "complementary_pair_rate": 1.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      },
+      "density": {
+        "coverage": 0.978,
+        "selective_accuracy": 0.9284253578732107,
+        "accepted": 489,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.22420671298250447,
+        "complementary_pair_rate": 1.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      },
+      "topk": {
+        "coverage": 0.522,
+        "selective_accuracy": 0.8352490421455939,
+        "accepted": 261,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.27750444463602325,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 1.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      },
+      "gates": {
+        "coverage": 0.522,
+        "selective_accuracy": 0.8352490421455939,
+        "accepted": 261,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.27750444463602325,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 1.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      },
+      "pairs": {
+        "coverage": 0.884,
+        "selective_accuracy": 0.9230769230769231,
+        "accepted": 442,
+        "admission_rate": 0.962,
+        "graph_size": 2.0,
+        "regret": 0.2244263673100547,
+        "complementary_pair_rate": 0.996,
+        "redundant_pair_rate": 0.004,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 490
+      },
+      "beam": {
+        "coverage": 0.978,
+        "selective_accuracy": 0.9284253578732107,
+        "accepted": 489,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.22420671298250447,
+        "complementary_pair_rate": 1.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      },
+      "exhaustive": {
+        "coverage": 0.978,
+        "selective_accuracy": 0.9284253578732107,
+        "accepted": 489,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.22420671298250447,
+        "complementary_pair_rate": 1.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      },
+      "nice_r": {
+        "coverage": 0.978,
+        "selective_accuracy": 0.9284253578732107,
+        "accepted": 489,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.22420671298250447,
+        "complementary_pair_rate": 1.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 0.0,
+        "mean_flops": 1696.0,
+        "calibration_rows": 500
+      }
+    },
+    "log-odds/loose": {
+      "greedy": {
+        "coverage": 0.954,
+        "selective_accuracy": 0.9622641509433962,
+        "accepted": 477,
+        "admission_rate": 1.0,
+        "graph_size": 1.0,
+        "regret": 0.11309296752882853,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 2544.0,
+        "calibration_rows": 500
+      },
+      "density": {
+        "coverage": 0.952,
+        "selective_accuracy": 0.9600840336134454,
+        "accepted": 476,
+        "admission_rate": 1.0,
+        "graph_size": 4.0,
+        "regret": 0.08017387823111928,
+        "complementary_pair_rate": 1.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 5088.0,
+        "calibration_rows": 500
+      },
+      "topk": {
+        "coverage": 0.966,
+        "selective_accuracy": 0.9233954451345756,
+        "accepted": 483,
+        "admission_rate": 1.0,
+        "graph_size": 2.0,
+        "regret": 0.10427842672694243,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 3392.0,
+        "calibration_rows": 500
+      },
+      "gates": {
+        "coverage": 0.986,
+        "selective_accuracy": 0.9269776876267748,
+        "accepted": 493,
+        "admission_rate": 1.0,
+        "graph_size": 4.0,
+        "regret": 0.07556472074545817,
+        "complementary_pair_rate": 1.0,
+        "redundant_pair_rate": 1.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 5088.0,
+        "calibration_rows": 500
+      },
+      "pairs": {
+        "coverage": 0.954,
+        "selective_accuracy": 0.9622641509433962,
+        "accepted": 477,
+        "admission_rate": 1.0,
+        "graph_size": 1.0,
+        "regret": 0.11309296752882853,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 2544.0,
+        "calibration_rows": 500
+      },
+      "beam": {
+        "coverage": 0.952,
+        "selective_accuracy": 0.9600840336134454,
+        "accepted": 476,
+        "admission_rate": 1.0,
+        "graph_size": 4.0,
+        "regret": 0.08017387823111928,
+        "complementary_pair_rate": 1.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 5088.0,
+        "calibration_rows": 500
+      },
+      "exhaustive": {
+        "coverage": 0.96,
+        "selective_accuracy": 0.9541666666666667,
+        "accepted": 480,
+        "admission_rate": 1.0,
+        "graph_size": 3.0,
+        "regret": 0.0801439864931825,
+        "complementary_pair_rate": 1.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 4240.0,
+        "calibration_rows": 500
+      },
+      "nice_r": {
+        "coverage": 0.954,
+        "selective_accuracy": 0.9622641509433962,
+        "accepted": 477,
+        "admission_rate": 1.0,
+        "graph_size": 1.0,
+        "regret": 0.11309296752882853,
+        "complementary_pair_rate": 0.0,
+        "redundant_pair_rate": 0.0,
+        "generalist_rate": 1.0,
+        "mean_flops": 2544.0,
+        "calibration_rows": 500
+      }
+    }
+  },
+  "verdict": {
+    "P2 synergy under log-odds": true,
+    "P3 redundancy under log-odds": true,
+    "P4 NICE-R finds the complementary pair": true,
+    "P5 top-k builds a redundant pair and loses accuracy": true,
+    "P6 NICE-R on the Pareto front, log-odds/tight": true,
+    "P6 NICE-R on the Pareto front, log-odds/loose": true,
+    "P1 mean-fusion identity holds (gap)": 0.0,
+    "H2 on this family": "supported",
+    "H1 on this family": "supported"
+  }
+}
