@@ -2,6 +2,9 @@
 
 **Version:** 0.1.0 | **Author:** Koushik Das | **Status:** preliminary
 
+New here? Start with [WHAT_IS_UMNA.md](WHAT_IS_UMNA.md): the hypothesis,
+the proposed architecture, and why the code is not open yet.
+
 This repository holds the benchmark results for UMNA: what each test
 asked, what it found, the preregistration written before it ran, and the
 raw output. The UMNA source code is not published here. Every result
