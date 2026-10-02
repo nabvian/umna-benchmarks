@@ -5,6 +5,13 @@
 New here? Start with [WHAT_IS_UMNA.md](WHAT_IS_UMNA.md): the hypothesis,
 the proposed architecture, and why the code is not open yet.
 
+**Paper:** Koushik Das (2026). *Adding Capabilities Without Silent
+Regression: A Frozen Core, Capability Routing, and Conservative
+Promotion.* Preprint, version 0.1.0. Zenodo.
+[doi:10.5281/zenodo.23097652](https://doi.org/10.5281/zenodo.23097652)
+(all versions: [doi:10.5281/zenodo.23097651](https://doi.org/10.5281/zenodo.23097651)).
+The results in the paper are the ones recorded here.
+
 This repository holds the benchmark results for UMNA: what each test
 asked, what it found, the preregistration written before it ran, and the
 raw output. The UMNA source code is not published here. Every result
