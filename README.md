@@ -19,6 +19,10 @@ file is tied to the signed commit of the code that produced it
 (PROVENANCE.md), so the record can be checked against the code when it
 is released.
 
+**Explore the results in your browser:** [nabvian.github.io/umna-benchmarks](https://nabvian.github.io/umna-benchmarks/)
+(interactive charts, the gate calculator, and a button that re-checks every
+hash in PROVENANCE.md).
+
 **Browse the results in Colab:**
 [notebooks/umna_results_viewer.ipynb](https://colab.research.google.com/github/nabvian/umna-benchmarks/blob/main/notebooks/umna_results_viewer.ipynb)
 (loads the files in this repository and plots them; nothing to install).
