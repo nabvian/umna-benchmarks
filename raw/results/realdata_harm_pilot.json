@@ -1,0 +1,269 @@
+{
+  "dataset": "Bioresponse",
+  "systems": {
+    "four-Wing graph": {
+      "origin": 0.680640243902439,
+      "manipulations": {
+        "A one-sided label noise": {
+          "series": [
+            {
+              "level": 0.1,
+              "served": 0.6760670731707317,
+              "served_drop": 0.004573170731707377
+            },
+            {
+              "level": 0.2,
+              "served": 0.6783536585365854,
+              "served_drop": 0.0022865853658536883
+            },
+            {
+              "level": 0.3,
+              "served": 0.6699695121951219,
+              "served_drop": 0.010670731707317138
+            },
+            {
+              "level": 0.4,
+              "served": 0.6577743902439024,
+              "served_drop": 0.02286585365853666
+            },
+            {
+              "level": 0.5,
+              "served": 0.6303353658536586,
+              "served_drop": 0.05030487804878048
+            }
+          ],
+          "graded": true,
+          "strong": false
+        },
+        "D poisoned region": {
+          "series": [
+            {
+              "level": 0.1,
+              "served": 0.6615853658536586,
+              "served_drop": 0.019054878048780477
+            },
+            {
+              "level": 0.2,
+              "served": 0.6600609756097561,
+              "served_drop": 0.020579268292682973
+            },
+            {
+              "level": 0.3,
+              "served": 0.6600609756097561,
+              "served_drop": 0.020579268292682973
+            },
+            {
+              "level": 0.4,
+              "served": 0.6341463414634146,
+              "served_drop": 0.046493902439024404
+            },
+            {
+              "level": 0.5,
+              "served": 0.6341463414634146,
+              "served_drop": 0.046493902439024404
+            }
+          ],
+          "graded": true,
+          "strong": false
+        },
+        "C narrow training slice": {
+          "series": [
+            {
+              "level": 0.1,
+              "served": 0.6760670731707317,
+              "served_drop": 0.004573170731707377
+            },
+            {
+              "level": 0.2,
+              "served": 0.676829268292683,
+              "served_drop": 0.003810975609756073
+            },
+            {
+              "level": 0.3,
+              "served": 0.676829268292683,
+              "served_drop": 0.003810975609756073
+            },
+            {
+              "level": 0.4,
+              "served": 0.6836890243902439,
+              "served_drop": -0.0030487804878048808
+            },
+            {
+              "level": 0.5,
+              "served": 0.6836890243902439,
+              "served_drop": -0.0030487804878048808
+            }
+          ],
+          "graded": true,
+          "strong": false
+        },
+        "B scrambled feature group": {
+          "series": [
+            {
+              "level": 0.1,
+              "served": 0.6821646341463414,
+              "served_drop": -0.0015243902439023849
+            },
+            {
+              "level": 0.2,
+              "served": 0.676829268292683,
+              "served_drop": 0.003810975609756073
+            },
+            {
+              "level": 0.3,
+              "served": 0.6836890243902439,
+              "served_drop": -0.0030487804878048808
+            },
+            {
+              "level": 0.4,
+              "served": 0.680640243902439,
+              "served_drop": 0.0
+            },
+            {
+              "level": 0.5,
+              "served": 0.6745426829268293,
+              "served_drop": 0.0060975609756097615
+            }
+          ],
+          "graded": true,
+          "strong": false
+        }
+      },
+      "chosen": null
+    },
+    "updated Wing alone": {
+      "origin": 0.6211890243902439,
+      "manipulations": {
+        "A one-sided label noise": {
+          "series": [
+            {
+              "level": 0.1,
+              "served": 0.6158536585365854,
+              "served_drop": 0.005335365853658569
+            },
+            {
+              "level": 0.2,
+              "served": 0.5983231707317073,
+              "served_drop": 0.02286585365853666
+            },
+            {
+              "level": 0.3,
+              "served": 0.5724085365853658,
+              "served_drop": 0.04878048780487809
+            },
+            {
+              "level": 0.4,
+              "served": 0.5533536585365854,
+              "served_drop": 0.06783536585365857
+            },
+            {
+              "level": 0.5,
+              "served": 0.5411585365853658,
+              "served_drop": 0.08003048780487809
+            }
+          ],
+          "graded": true,
+          "strong": false
+        },
+        "D poisoned region": {
+          "series": [
+            {
+              "level": 0.1,
+              "served": 0.6120426829268293,
+              "served_drop": 0.009146341463414642
+            },
+            {
+              "level": 0.2,
+              "served": 0.5960365853658537,
+              "served_drop": 0.02515243902439024
+            },
+            {
+              "level": 0.3,
+              "served": 0.5960365853658537,
+              "served_drop": 0.02515243902439024
+            },
+            {
+              "level": 0.4,
+              "served": 0.5030487804878049,
+              "served_drop": 0.11814024390243905
+            },
+            {
+              "level": 0.5,
+              "served": 0.5030487804878049,
+              "served_drop": 0.11814024390243905
+            }
+          ],
+          "graded": true,
+          "strong": true
+        },
+        "C narrow training slice": {
+          "series": [
+            {
+              "level": 0.1,
+              "served": 0.6242378048780488,
+              "served_drop": -0.0030487804878048808
+            },
+            {
+              "level": 0.2,
+              "served": 0.6440548780487805,
+              "served_drop": -0.02286585365853655
+            },
+            {
+              "level": 0.3,
+              "served": 0.6440548780487805,
+              "served_drop": -0.02286585365853655
+            },
+            {
+              "level": 0.4,
+              "served": 0.649390243902439,
+              "served_drop": -0.02820121951219512
+            },
+            {
+              "level": 0.5,
+              "served": 0.649390243902439,
+              "served_drop": -0.02820121951219512
+            }
+          ],
+          "graded": false,
+          "strong": false
+        },
+        "B scrambled feature group": {
+          "series": [
+            {
+              "level": 0.1,
+              "served": 0.6295731707317073,
+              "served_drop": -0.008384146341463339
+            },
+            {
+              "level": 0.2,
+              "served": 0.6234756097560976,
+              "served_drop": -0.0022865853658536883
+            },
+            {
+              "level": 0.3,
+              "served": 0.618140243902439,
+              "served_drop": 0.0030487804878048808
+            },
+            {
+              "level": 0.4,
+              "served": 0.6112804878048781,
+              "served_drop": 0.009908536585365835
+            },
+            {
+              "level": 0.5,
+              "served": 0.6120426829268293,
+              "served_drop": 0.009146341463414642
+            }
+          ],
+          "graded": true,
+          "strong": false
+        }
+      },
+      "chosen": "D poisoned region"
+    }
+  },
+  "chosen": {
+    "system": "updated Wing alone",
+    "manipulation": "D poisoned region"
+  }
+}

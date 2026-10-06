@@ -1,0 +1,4494 @@
+{
+  "preregistration_sha256": "4b35be82cbf9f25f32ad00e78d66d31e227295684e58d82be4700a78fdf0479f",
+  "datasets": {
+    "spambase": {
+      "rows": {
+        "train": 1840,
+        "gate": 1610,
+        "audit": 1150
+      },
+      "origin_gate_accuracy": 0.9111801242236025,
+      "floor": 0.6037267080745341,
+      "qualifies": true,
+      "epsilon": 0.02,
+      "origin_audit_accuracy": 0.9069565217391304,
+      "audit_accuracy": {
+        "v0 origin": 0.9069565217391304,
+        "c1 poisoned 1%": 0.9034782608695652,
+        "c2 poisoned 2%": 0.9034782608695652,
+        "c3 poisoned 3%": 0.9,
+        "c4 poisoned 4%": 0.8991304347826087,
+        "c5 poisoned 5%": 0.8982608695652174,
+        "c6 poisoned 6%": 0.8834782608695653,
+        "c7 poisoned 7%": 0.8765217391304347,
+        "c8 poisoned 8%": 0.86,
+        "c9 poisoned 9%": 0.8478260869565217,
+        "c10 poisoned 10%": 0.8417391304347827,
+        "c11 poisoned 11%": 0.8304347826086956,
+        "c12 poisoned 12%": 0.8226086956521739,
+        "c13 poisoned 13%": 0.8156521739130435,
+        "c14 poisoned 14%": 0.8139130434782609,
+        "c15 poisoned 15%": 0.8104347826086956,
+        "c16 poisoned 16%": 0.7904347826086957,
+        "c17 poisoned 17%": 0.7860869565217391,
+        "c18 poisoned 18%": 0.7791304347826087,
+        "c19 poisoned 19%": 0.7678260869565218,
+        "c20 poisoned 20%": 0.7530434782608696,
+        "c21 poisoned 21%": 0.7460869565217392,
+        "c22 poisoned 22%": 0.7469565217391304,
+        "c23 poisoned 23%": 0.7434782608695653,
+        "c24 poisoned 24%": 0.09043478260869565,
+        "c25 poisoned 25%": 0.09043478260869565,
+        "c26 poisoned 26%": 0.09043478260869565,
+        "c27 poisoned 27%": 0.09043478260869565,
+        "c28 poisoned 28%": 0.09043478260869565,
+        "c29 poisoned 29%": 0.09043478260869565,
+        "c30 poisoned 30%": 0.09043478260869565
+      },
+      "gate_accuracy": {
+        "v0 origin": 0.9111801242236025,
+        "c1 poisoned 1%": 0.9043478260869565,
+        "c2 poisoned 2%": 0.9012422360248448,
+        "c3 poisoned 3%": 0.9,
+        "c4 poisoned 4%": 0.8975155279503105,
+        "c5 poisoned 5%": 0.8956521739130435,
+        "c6 poisoned 6%": 0.8881987577639752,
+        "c7 poisoned 7%": 0.8782608695652174,
+        "c8 poisoned 8%": 0.8664596273291926,
+        "c9 poisoned 9%": 0.8509316770186336,
+        "c10 poisoned 10%": 0.8366459627329192,
+        "c11 poisoned 11%": 0.8298136645962733,
+        "c12 poisoned 12%": 0.824223602484472,
+        "c13 poisoned 13%": 0.8173913043478261,
+        "c14 poisoned 14%": 0.8167701863354038,
+        "c15 poisoned 15%": 0.8055900621118013,
+        "c16 poisoned 16%": 0.7894409937888198,
+        "c17 poisoned 17%": 0.7900621118012422,
+        "c18 poisoned 18%": 0.7881987577639752,
+        "c19 poisoned 19%": 0.7726708074534161,
+        "c20 poisoned 20%": 0.7583850931677019,
+        "c21 poisoned 21%": 0.7503105590062111,
+        "c22 poisoned 22%": 0.7447204968944099,
+        "c23 poisoned 23%": 0.7409937888198758,
+        "c24 poisoned 24%": 0.09627329192546584,
+        "c25 poisoned 25%": 0.09627329192546584,
+        "c26 poisoned 26%": 0.09627329192546584,
+        "c27 poisoned 27%": 0.09627329192546584,
+        "c28 poisoned 28%": 0.09627329192546584,
+        "c29 poisoned 29%": 0.09627329192546584,
+        "c30 poisoned 30%": 0.09627329192546584
+      },
+      "share_of_steps_within_epsilon": 0.9666666666666667,
+      "arms": {
+        "no_gate": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8991304347826087,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8982608695652174,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c5 poisoned 5%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8834782608695653,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8765217391304347,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.86,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8478260869565217,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c9 poisoned 9%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8417391304347827,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c10 poisoned 10%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8304347826086956,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c11 poisoned 11%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8226086956521739,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c12 poisoned 12%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8156521739130435,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c13 poisoned 13%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8139130434782609,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c14 poisoned 14%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8104347826086956,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c15 poisoned 15%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7904347826086957,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c16 poisoned 16%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7860869565217391,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c17 poisoned 17%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7791304347826087,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c18 poisoned 18%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7678260869565218,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c19 poisoned 19%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7530434782608696,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c20 poisoned 20%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7460869565217392,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c21 poisoned 21%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7469565217391304,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c22 poisoned 22%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7434782608695653,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c23 poisoned 23%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c24 poisoned 24%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c25 poisoned 25%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c26 poisoned 26%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c27 poisoned 27%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c28 poisoned 28%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c29 poisoned 29%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "no gate"
+            }
+          ],
+          "served_eroded": true,
+          "worst_served_audit_accuracy": 0.09043478260869565,
+          "final_version": "c30 poisoned 30%",
+          "final_audit_accuracy": 0.09043478260869565,
+          "first_rejection": null,
+          "rejected_not_eroded_within_epsilon": 0
+        },
+        "step_point": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8991304347826087,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8982608695652174,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c5 poisoned 5%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8834782608695653,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8765217391304347,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.86,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8478260869565217,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c9 poisoned 9%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8417391304347827,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c10 poisoned 10%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8304347826086956,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c11 poisoned 11%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8226086956521739,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c12 poisoned 12%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8156521739130435,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c13 poisoned 13%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8139130434782609,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c14 poisoned 14%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8104347826086956,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c15 poisoned 15%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7904347826086957,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c16 poisoned 16%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7860869565217391,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c17 poisoned 17%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7791304347826087,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c18 poisoned 18%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7678260869565218,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c19 poisoned 19%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7530434782608696,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c20 poisoned 20%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7460869565217392,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c21 poisoned 21%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7469565217391304,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c22 poisoned 22%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7434782608695653,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c23 poisoned 23%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c23 poisoned 23%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c23 poisoned 23%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c23 poisoned 23%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c23 poisoned 23%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c23 poisoned 23%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c23 poisoned 23%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step estimate"
+            }
+          ],
+          "served_eroded": true,
+          "worst_served_audit_accuracy": 0.7434782608695653,
+          "final_version": "c23 poisoned 23%",
+          "final_audit_accuracy": 0.7434782608695653,
+          "first_rejection": "c24 poisoned 24%",
+          "rejected_not_eroded_within_epsilon": 0
+        },
+        "step_origin_point": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8991304347826087,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8982608695652174,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c5 poisoned 5%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8834782608695653,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8765217391304347,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.86,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8478260869565217,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8417391304347827,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8304347826086956,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8226086956521739,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8156521739130435,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8139130434782609,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8104347826086956,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7904347826086957,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7860869565217391,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7791304347826087,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7678260869565218,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7530434782608696,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7460869565217392,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7469565217391304,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7434782608695653,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step and origin estimates"
+            }
+          ],
+          "served_eroded": false,
+          "worst_served_audit_accuracy": 0.86,
+          "final_version": "c8 poisoned 8%",
+          "final_audit_accuracy": 0.86,
+          "first_rejection": "c9 poisoned 9%",
+          "rejected_not_eroded_within_epsilon": 0
+        },
+        "cce_step_only": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8991304347826087,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8982608695652174,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c5 poisoned 5%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8834782608695653,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8765217391304347,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.86,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8478260869565217,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8417391304347827,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8304347826086956,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8226086956521739,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8156521739130435,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8139130434782609,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8104347826086956,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7904347826086957,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7860869565217391,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7791304347826087,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7678260869565218,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7530434782608696,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7460869565217392,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7469565217391304,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7434782608695653,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            }
+          ],
+          "served_eroded": false,
+          "worst_served_audit_accuracy": 0.86,
+          "final_version": "c8 poisoned 8%",
+          "final_audit_accuracy": 0.86,
+          "first_rejection": "c9 poisoned 9%",
+          "rejected_not_eroded_within_epsilon": 0
+        },
+        "cce": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8991304347826087,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8982608695652174,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c5 poisoned 5%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8834782608695653,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8765217391304347,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.86,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8478260869565217,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8417391304347827,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8304347826086956,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8226086956521739,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8156521739130435,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8139130434782609,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8104347826086956,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7904347826086957,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7860869565217391,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7791304347826087,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7678260869565218,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7530434782608696,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7460869565217392,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7469565217391304,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7434782608695653,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(both)"
+            }
+          ],
+          "served_eroded": false,
+          "worst_served_audit_accuracy": 0.8765217391304347,
+          "final_version": "c7 poisoned 7%",
+          "final_audit_accuracy": 0.8765217391304347,
+          "first_rejection": "c8 poisoned 8%",
+          "rejected_not_eroded_within_epsilon": 1
+        }
+      },
+      "verdict": {
+        "PS1 cce_step_only serves an eroded version": false,
+        "PS2 cce never serves an eroded version": true,
+        "slow-erosion hypothesis": "not exercised"
+      }
+    },
+    "banknote-authentication": {
+      "rows": {
+        "train": 548,
+        "gate": 480,
+        "audit": 343
+      },
+      "origin_gate_accuracy": 0.9916666666666667,
+      "floor": 0.5583333333333333,
+      "qualifies": true,
+      "epsilon": 0.01,
+      "origin_audit_accuracy": 1.0,
+      "audit_accuracy": {
+        "v0 origin": 1.0,
+        "c1 poisoned 1%": 0.9970845481049563,
+        "c2 poisoned 2%": 1.0,
+        "c3 poisoned 3%": 0.9970845481049563,
+        "c4 poisoned 4%": 0.9912536443148688,
+        "c5 poisoned 5%": 0.9854227405247813,
+        "c6 poisoned 6%": 0.9766763848396501,
+        "c7 poisoned 7%": 0.9737609329446064,
+        "c8 poisoned 8%": 0.9708454810495627,
+        "c9 poisoned 9%": 0.956268221574344,
+        "c10 poisoned 10%": 0.9475218658892128,
+        "c11 poisoned 11%": 0.9212827988338192,
+        "c12 poisoned 12%": 0.9154518950437318,
+        "c13 poisoned 13%": 0.8950437317784257,
+        "c14 poisoned 14%": 0.880466472303207,
+        "c15 poisoned 15%": 0.8717201166180758,
+        "c16 poisoned 16%": 0.8542274052478134,
+        "c17 poisoned 17%": 0.8454810495626822,
+        "c18 poisoned 18%": 0.8367346938775511,
+        "c19 poisoned 19%": 0.8104956268221575,
+        "c20 poisoned 20%": 0.7959183673469388,
+        "c21 poisoned 21%": 0.793002915451895,
+        "c22 poisoned 22%": 0.7842565597667639,
+        "c23 poisoned 23%": 0.7667638483965015,
+        "c24 poisoned 24%": 0.7638483965014577,
+        "c25 poisoned 25%": 0.7551020408163265,
+        "c26 poisoned 26%": 0.749271137026239,
+        "c27 poisoned 27%": 0.7288629737609329,
+        "c28 poisoned 28%": 0.6997084548104956,
+        "c29 poisoned 29%": 0.6967930029154519,
+        "c30 poisoned 30%": 0.6822157434402333
+      },
+      "gate_accuracy": {
+        "v0 origin": 0.9916666666666667,
+        "c1 poisoned 1%": 0.9895833333333334,
+        "c2 poisoned 2%": 0.99375,
+        "c3 poisoned 3%": 1.0,
+        "c4 poisoned 4%": 0.9916666666666667,
+        "c5 poisoned 5%": 0.98125,
+        "c6 poisoned 6%": 0.96875,
+        "c7 poisoned 7%": 0.9583333333333334,
+        "c8 poisoned 8%": 0.9604166666666667,
+        "c9 poisoned 9%": 0.9541666666666667,
+        "c10 poisoned 10%": 0.9375,
+        "c11 poisoned 11%": 0.9104166666666667,
+        "c12 poisoned 12%": 0.9020833333333333,
+        "c13 poisoned 13%": 0.8729166666666667,
+        "c14 poisoned 14%": 0.8604166666666667,
+        "c15 poisoned 15%": 0.8541666666666666,
+        "c16 poisoned 16%": 0.8416666666666667,
+        "c17 poisoned 17%": 0.8291666666666667,
+        "c18 poisoned 18%": 0.8083333333333333,
+        "c19 poisoned 19%": 0.8041666666666667,
+        "c20 poisoned 20%": 0.7895833333333333,
+        "c21 poisoned 21%": 0.7854166666666667,
+        "c22 poisoned 22%": 0.7833333333333333,
+        "c23 poisoned 23%": 0.78125,
+        "c24 poisoned 24%": 0.7729166666666667,
+        "c25 poisoned 25%": 0.7645833333333333,
+        "c26 poisoned 26%": 0.7604166666666666,
+        "c27 poisoned 27%": 0.75625,
+        "c28 poisoned 28%": 0.7416666666666667,
+        "c29 poisoned 29%": 0.73125,
+        "c30 poisoned 30%": 0.7145833333333333
+      },
+      "share_of_steps_within_epsilon": 0.6333333333333333,
+      "arms": {
+        "no_gate": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9970845481049563,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 1.0,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9970845481049563,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9912536443148688,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9854227405247813,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c5 poisoned 5%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9766763848396501,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9737609329446064,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9708454810495627,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.956268221574344,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c9 poisoned 9%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9475218658892128,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c10 poisoned 10%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9212827988338192,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c11 poisoned 11%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9154518950437318,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c12 poisoned 12%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8950437317784257,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c13 poisoned 13%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.880466472303207,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c14 poisoned 14%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8717201166180758,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c15 poisoned 15%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8542274052478134,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c16 poisoned 16%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8454810495626822,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c17 poisoned 17%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8367346938775511,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c18 poisoned 18%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8104956268221575,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c19 poisoned 19%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7959183673469388,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c20 poisoned 20%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.793002915451895,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c21 poisoned 21%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7842565597667639,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c22 poisoned 22%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7667638483965015,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c23 poisoned 23%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7638483965014577,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c24 poisoned 24%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7551020408163265,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c25 poisoned 25%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.749271137026239,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c26 poisoned 26%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7288629737609329,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c27 poisoned 27%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6997084548104956,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c28 poisoned 28%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6967930029154519,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c29 poisoned 29%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6822157434402333,
+              "reason": "no gate"
+            }
+          ],
+          "served_eroded": true,
+          "worst_served_audit_accuracy": 0.6822157434402333,
+          "final_version": "c30 poisoned 30%",
+          "final_audit_accuracy": 0.6822157434402333,
+          "first_rejection": null,
+          "rejected_not_eroded_within_epsilon": 0
+        },
+        "step_point": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9970845481049563,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 1.0,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9970845481049563,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9912536443148688,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9854227405247813,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9766763848396501,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9737609329446064,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9708454810495627,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.956268221574344,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9475218658892128,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9212827988338192,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9154518950437318,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8950437317784257,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.880466472303207,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8717201166180758,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8542274052478134,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8454810495626822,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8367346938775511,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8104956268221575,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7959183673469388,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.793002915451895,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7842565597667639,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7667638483965015,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7638483965014577,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7551020408163265,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.749271137026239,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7288629737609329,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6997084548104956,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6967930029154519,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6822157434402333,
+              "reason": "point step estimate"
+            }
+          ],
+          "served_eroded": false,
+          "worst_served_audit_accuracy": 0.9912536443148688,
+          "final_version": "c4 poisoned 4%",
+          "final_audit_accuracy": 0.9912536443148688,
+          "first_rejection": "c5 poisoned 5%",
+          "rejected_not_eroded_within_epsilon": 1
+        },
+        "step_origin_point": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9970845481049563,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 1.0,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9970845481049563,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9912536443148688,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9854227405247813,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9766763848396501,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9737609329446064,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9708454810495627,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.956268221574344,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9475218658892128,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9212827988338192,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9154518950437318,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8950437317784257,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.880466472303207,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8717201166180758,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8542274052478134,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8454810495626822,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8367346938775511,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8104956268221575,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7959183673469388,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.793002915451895,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7842565597667639,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7667638483965015,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7638483965014577,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7551020408163265,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.749271137026239,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7288629737609329,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6997084548104956,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6967930029154519,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6822157434402333,
+              "reason": "point step and origin estimates"
+            }
+          ],
+          "served_eroded": false,
+          "worst_served_audit_accuracy": 0.9912536443148688,
+          "final_version": "c4 poisoned 4%",
+          "final_audit_accuracy": 0.9912536443148688,
+          "first_rejection": "c5 poisoned 5%",
+          "rejected_not_eroded_within_epsilon": 1
+        },
+        "cce_step_only": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9970845481049563,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 1.0,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9970845481049563,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9912536443148688,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9854227405247813,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9766763848396501,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9737609329446064,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9708454810495627,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.956268221574344,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9475218658892128,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9212827988338192,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9154518950437318,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8950437317784257,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.880466472303207,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8717201166180758,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8542274052478134,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8454810495626822,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8367346938775511,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8104956268221575,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7959183673469388,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.793002915451895,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7842565597667639,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7667638483965015,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7638483965014577,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7551020408163265,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.749271137026239,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7288629737609329,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6997084548104956,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6967930029154519,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6822157434402333,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            }
+          ],
+          "served_eroded": false,
+          "worst_served_audit_accuracy": 0.9970845481049563,
+          "final_version": "c3 poisoned 3%",
+          "final_audit_accuracy": 0.9970845481049563,
+          "first_rejection": "c4 poisoned 4%",
+          "rejected_not_eroded_within_epsilon": 1
+        },
+        "cce": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9970845481049563,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 1.0,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9970845481049563,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.9912536443148688,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9854227405247813,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9766763848396501,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9737609329446064,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9708454810495627,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.956268221574344,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9475218658892128,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9212827988338192,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.9154518950437318,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8950437317784257,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.880466472303207,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8717201166180758,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8542274052478134,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8454810495626822,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8367346938775511,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.8104956268221575,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7959183673469388,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.793002915451895,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7842565597667639,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7667638483965015,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7638483965014577,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7551020408163265,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.749271137026239,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7288629737609329,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6997084548104956,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6967930029154519,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6822157434402333,
+              "reason": "Drift gates did not pass: updated(both)"
+            }
+          ],
+          "served_eroded": false,
+          "worst_served_audit_accuracy": 0.9970845481049563,
+          "final_version": "c3 poisoned 3%",
+          "final_audit_accuracy": 0.9970845481049563,
+          "first_rejection": "c4 poisoned 4%",
+          "rejected_not_eroded_within_epsilon": 1
+        }
+      },
+      "verdict": {
+        "PS1 cce_step_only serves an eroded version": false,
+        "PS2 cce never serves an eroded version": true,
+        "slow-erosion hypothesis": "not exercised"
+      }
+    },
+    "madelon": {
+      "rows": {
+        "train": 1040,
+        "gate": 909,
+        "audit": 650
+      },
+      "origin_gate_accuracy": 0.5324532453245324,
+      "floor": 0.5104510451045104,
+      "qualifies": false
+    },
+    "phoneme": {
+      "rows": {
+        "train": 2161,
+        "gate": 1891,
+        "audit": 1351
+      },
+      "origin_gate_accuracy": 0.790058170280275,
+      "floor": 0.7070333157059756,
+      "qualifies": false
+    },
+    "qsar-biodeg": {
+      "rows": {
+        "train": 422,
+        "gate": 369,
+        "audit": 263
+      },
+      "origin_gate_accuracy": 0.8644986449864499,
+      "floor": 0.6476964769647697,
+      "qualifies": true,
+      "epsilon": 0.05,
+      "origin_audit_accuracy": 0.8174904942965779,
+      "audit_accuracy": {
+        "v0 origin": 0.8174904942965779,
+        "c1 poisoned 1%": 0.8250950570342205,
+        "c2 poisoned 2%": 0.8212927756653993,
+        "c3 poisoned 3%": 0.8022813688212928,
+        "c4 poisoned 4%": 0.8212927756653993,
+        "c5 poisoned 5%": 0.8136882129277566,
+        "c6 poisoned 6%": 0.8212927756653993,
+        "c7 poisoned 7%": 0.7870722433460076,
+        "c8 poisoned 8%": 0.7604562737642585,
+        "c9 poisoned 9%": 0.7566539923954373,
+        "c10 poisoned 10%": 0.752851711026616,
+        "c11 poisoned 11%": 0.7414448669201521,
+        "c12 poisoned 12%": 0.7376425855513308,
+        "c13 poisoned 13%": 0.7186311787072244,
+        "c14 poisoned 14%": 0.7224334600760456,
+        "c15 poisoned 15%": 0.7186311787072244,
+        "c16 poisoned 16%": 0.7224334600760456,
+        "c17 poisoned 17%": 0.7072243346007605,
+        "c18 poisoned 18%": 0.7072243346007605,
+        "c19 poisoned 19%": 0.7186311787072244,
+        "c20 poisoned 20%": 0.6958174904942965,
+        "c21 poisoned 21%": 0.6996197718631179,
+        "c22 poisoned 22%": 0.6577946768060836,
+        "c23 poisoned 23%": 0.6653992395437263,
+        "c24 poisoned 24%": 0.6653992395437263,
+        "c25 poisoned 25%": 0.6577946768060836,
+        "c26 poisoned 26%": 0.6615969581749049,
+        "c27 poisoned 27%": 0.6653992395437263,
+        "c28 poisoned 28%": 0.6425855513307985,
+        "c29 poisoned 29%": 0.6197718631178707,
+        "c30 poisoned 30%": 0.6159695817490495
+      },
+      "gate_accuracy": {
+        "v0 origin": 0.8644986449864499,
+        "c1 poisoned 1%": 0.8672086720867209,
+        "c2 poisoned 2%": 0.8482384823848238,
+        "c3 poisoned 3%": 0.8373983739837398,
+        "c4 poisoned 4%": 0.8563685636856369,
+        "c5 poisoned 5%": 0.8563685636856369,
+        "c6 poisoned 6%": 0.8455284552845529,
+        "c7 poisoned 7%": 0.8292682926829268,
+        "c8 poisoned 8%": 0.8211382113821138,
+        "c9 poisoned 9%": 0.8048780487804879,
+        "c10 poisoned 10%": 0.8048780487804879,
+        "c11 poisoned 11%": 0.8021680216802168,
+        "c12 poisoned 12%": 0.7967479674796748,
+        "c13 poisoned 13%": 0.7696476964769647,
+        "c14 poisoned 14%": 0.7859078590785907,
+        "c15 poisoned 15%": 0.7913279132791328,
+        "c16 poisoned 16%": 0.7831978319783198,
+        "c17 poisoned 17%": 0.7452574525745257,
+        "c18 poisoned 18%": 0.7506775067750677,
+        "c19 poisoned 19%": 0.7588075880758808,
+        "c20 poisoned 20%": 0.7398373983739838,
+        "c21 poisoned 21%": 0.7289972899728997,
+        "c22 poisoned 22%": 0.6964769647696477,
+        "c23 poisoned 23%": 0.6964769647696477,
+        "c24 poisoned 24%": 0.6747967479674797,
+        "c25 poisoned 25%": 0.6639566395663956,
+        "c26 poisoned 26%": 0.6693766937669376,
+        "c27 poisoned 27%": 0.6639566395663956,
+        "c28 poisoned 28%": 0.6666666666666666,
+        "c29 poisoned 29%": 0.6558265582655827,
+        "c30 poisoned 30%": 0.6666666666666666
+      },
+      "share_of_steps_within_epsilon": 1.0,
+      "arms": {
+        "no_gate": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8250950570342205,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8022813688212928,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8136882129277566,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c5 poisoned 5%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7870722433460076,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7604562737642585,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7566539923954373,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c9 poisoned 9%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.752851711026616,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c10 poisoned 10%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7414448669201521,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c11 poisoned 11%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7376425855513308,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c12 poisoned 12%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c13 poisoned 13%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7224334600760456,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c14 poisoned 14%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c15 poisoned 15%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7224334600760456,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c16 poisoned 16%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7072243346007605,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c17 poisoned 17%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7072243346007605,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c18 poisoned 18%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c19 poisoned 19%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6958174904942965,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c20 poisoned 20%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6996197718631179,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c21 poisoned 21%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6577946768060836,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c22 poisoned 22%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c23 poisoned 23%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c24 poisoned 24%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6577946768060836,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c25 poisoned 25%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6615969581749049,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c26 poisoned 26%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c27 poisoned 27%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6425855513307985,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c28 poisoned 28%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6197718631178707,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c29 poisoned 29%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6159695817490495,
+              "reason": "no gate"
+            }
+          ],
+          "served_eroded": true,
+          "worst_served_audit_accuracy": 0.6159695817490495,
+          "final_version": "c30 poisoned 30%",
+          "final_audit_accuracy": 0.6159695817490495,
+          "first_rejection": null,
+          "rejected_not_eroded_within_epsilon": 0
+        },
+        "step_point": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8250950570342205,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8022813688212928,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8136882129277566,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c5 poisoned 5%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7870722433460076,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7604562737642585,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7566539923954373,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c9 poisoned 9%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.752851711026616,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c10 poisoned 10%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7414448669201521,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c11 poisoned 11%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7376425855513308,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c12 poisoned 12%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c13 poisoned 13%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7224334600760456,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c14 poisoned 14%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c15 poisoned 15%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7224334600760456,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c16 poisoned 16%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7072243346007605,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c17 poisoned 17%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7072243346007605,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c18 poisoned 18%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c19 poisoned 19%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6958174904942965,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c20 poisoned 20%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6996197718631179,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c21 poisoned 21%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6577946768060836,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c22 poisoned 22%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c23 poisoned 23%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c24 poisoned 24%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6577946768060836,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c25 poisoned 25%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6615969581749049,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c26 poisoned 26%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c27 poisoned 27%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6425855513307985,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c28 poisoned 28%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6197718631178707,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c29 poisoned 29%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6159695817490495,
+              "reason": "point step estimate"
+            }
+          ],
+          "served_eroded": true,
+          "worst_served_audit_accuracy": 0.6159695817490495,
+          "final_version": "c30 poisoned 30%",
+          "final_audit_accuracy": 0.6159695817490495,
+          "first_rejection": null,
+          "rejected_not_eroded_within_epsilon": 0
+        },
+        "step_origin_point": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8250950570342205,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8022813688212928,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8136882129277566,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c5 poisoned 5%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7870722433460076,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7604562737642585,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7566539923954373,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.752851711026616,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7414448669201521,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7376425855513308,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7224334600760456,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7224334600760456,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7072243346007605,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7072243346007605,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6958174904942965,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6996197718631179,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6577946768060836,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6577946768060836,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6615969581749049,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6425855513307985,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6197718631178707,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6159695817490495,
+              "reason": "point step and origin estimates"
+            }
+          ],
+          "served_eroded": true,
+          "worst_served_audit_accuracy": 0.7604562737642585,
+          "final_version": "c8 poisoned 8%",
+          "final_audit_accuracy": 0.7604562737642585,
+          "first_rejection": "c9 poisoned 9%",
+          "rejected_not_eroded_within_epsilon": 0
+        },
+        "cce_step_only": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8250950570342205,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8022813688212928,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8136882129277566,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c5 poisoned 5%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7870722433460076,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c7 poisoned 7%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7604562737642585,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c8 poisoned 8%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7566539923954373,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c9 poisoned 9%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.752851711026616,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c10 poisoned 10%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7414448669201521,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c11 poisoned 11%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7376425855513308,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c12 poisoned 12%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c13 poisoned 13%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7224334600760456,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c14 poisoned 14%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c15 poisoned 15%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7224334600760456,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c16 poisoned 16%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7072243346007605,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c16 poisoned 16%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7072243346007605,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c18 poisoned 18%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c19 poisoned 19%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6958174904942965,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c20 poisoned 20%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6996197718631179,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c21 poisoned 21%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6577946768060836,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c22 poisoned 22%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c23 poisoned 23%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c24 poisoned 24%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6577946768060836,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c25 poisoned 25%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6615969581749049,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c26 poisoned 26%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c27 poisoned 27%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6425855513307985,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c28 poisoned 28%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6197718631178707,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c29 poisoned 29%",
+              "promoted": true,
+              "eroded": true,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.6159695817490495,
+              "reason": "Drift gates passed, promoted to production"
+            }
+          ],
+          "served_eroded": true,
+          "worst_served_audit_accuracy": 0.6159695817490495,
+          "final_version": "c30 poisoned 30%",
+          "final_audit_accuracy": 0.6159695817490495,
+          "first_rejection": "c17 poisoned 17%",
+          "rejected_not_eroded_within_epsilon": 0
+        },
+        "cce": {
+          "decisions": [
+            {
+              "candidate": "c1 poisoned 1%",
+              "compared_with": "v0 origin",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8250950570342205,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c2 poisoned 2%",
+              "compared_with": "c1 poisoned 1%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c3 poisoned 3%",
+              "compared_with": "c2 poisoned 2%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8022813688212928,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c4 poisoned 4%",
+              "compared_with": "c3 poisoned 3%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c5 poisoned 5%",
+              "compared_with": "c4 poisoned 4%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8136882129277566,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c6 poisoned 6%",
+              "compared_with": "c5 poisoned 5%",
+              "promoted": true,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.8212927756653993,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c7 poisoned 7%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": false,
+              "within_epsilon_of_serving": true,
+              "audit_accuracy": 0.7870722433460076,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c8 poisoned 8%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7604562737642585,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c9 poisoned 9%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7566539923954373,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c10 poisoned 10%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.752851711026616,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c11 poisoned 11%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7414448669201521,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c12 poisoned 12%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7376425855513308,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c13 poisoned 13%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c14 poisoned 14%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7224334600760456,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c15 poisoned 15%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c16 poisoned 16%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7224334600760456,
+              "reason": "Drift gates did not pass: updated(origin_drift)"
+            },
+            {
+              "candidate": "c17 poisoned 17%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7072243346007605,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c18 poisoned 18%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7072243346007605,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c19 poisoned 19%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.7186311787072244,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c20 poisoned 20%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6958174904942965,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c21 poisoned 21%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6996197718631179,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c22 poisoned 22%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6577946768060836,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c23 poisoned 23%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c24 poisoned 24%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c25 poisoned 25%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6577946768060836,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c26 poisoned 26%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6615969581749049,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c27 poisoned 27%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6653992395437263,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c28 poisoned 28%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6425855513307985,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c29 poisoned 29%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6197718631178707,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c30 poisoned 30%",
+              "compared_with": "c6 poisoned 6%",
+              "promoted": false,
+              "eroded": true,
+              "within_epsilon_of_serving": false,
+              "audit_accuracy": 0.6159695817490495,
+              "reason": "Drift gates did not pass: updated(both)"
+            }
+          ],
+          "served_eroded": false,
+          "worst_served_audit_accuracy": 0.8022813688212928,
+          "final_version": "c6 poisoned 6%",
+          "final_audit_accuracy": 0.8212927756653993,
+          "first_rejection": "c7 poisoned 7%",
+          "rejected_not_eroded_within_epsilon": 1
+        }
+      },
+      "verdict": {
+        "PS1 cce_step_only serves an eroded version": true,
+        "PS2 cce never serves an eroded version": true,
+        "slow-erosion hypothesis": "supported"
+      }
+    },
+    "numerai28.6": {
+      "rows": {
+        "train": 20000,
+        "gate": 20000,
+        "audit": 20000
+      },
+      "origin_gate_accuracy": 0.51455,
+      "floor": 0.50675,
+      "qualifies": false
+    }
+  },
+  "overall": "supported (1 of 1 exercised datasets)"
+}

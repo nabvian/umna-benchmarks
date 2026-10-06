@@ -1,0 +1,1150 @@
+{
+  "preregistration_sha256": "b40ad1084ece4e65f3537033d2c6c5edf710024cc24ff7cdaa2439c4ce03310d",
+  "datasets": {
+    "spambase": {
+      "rows": {
+        "train": 1840,
+        "gate": 1610,
+        "audit": 1150
+      },
+      "origin_gate_accuracy": 0.9267080745341615,
+      "floor": 0.5931677018633541,
+      "qualifies": true,
+      "epsilon": 0.02,
+      "origin_audit_accuracy": 0.9104347826086957,
+      "audit_accuracy": {
+        "v1 origin": 0.9104347826086957,
+        "c1 clean retrain": 0.9034782608695652,
+        "c2 clean, twice the steps": 0.9156521739130434,
+        "c3 poisoned 10%": 0.8565217391304348,
+        "c4 poisoned 20%": 0.7773913043478261,
+        "c5 poisoned 30%": 0.09043478260869565,
+        "c6 poisoned 40%": 0.09913043478260869,
+        "c7 poisoned 50%": 0.09130434782608696,
+        "c8 clean retrain": 0.8913043478260869
+      },
+      "gate_accuracy": {
+        "v1 origin": 0.9267080745341615,
+        "c1 clean retrain": 0.924223602484472,
+        "c2 clean, twice the steps": 0.9397515527950311,
+        "c3 poisoned 10%": 0.8540372670807453,
+        "c4 poisoned 20%": 0.7832298136645963,
+        "c5 poisoned 30%": 0.07391304347826087,
+        "c6 poisoned 40%": 0.08136645962732919,
+        "c7 poisoned 50%": 0.08012422360248447,
+        "c8 clean retrain": 0.9006211180124224
+      },
+      "arms": {
+        "no_gate": {
+          "decisions": [
+            {
+              "candidate": "c1 clean retrain",
+              "compared_with": "v1 origin",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c2 clean, twice the steps",
+              "compared_with": "c1 clean retrain",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9156521739130434,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c3 poisoned 10%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.8565217391304348,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c4 poisoned 20%",
+              "compared_with": "c3 poisoned 10%",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.7773913043478261,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c5 poisoned 30%",
+              "compared_with": "c4 poisoned 20%",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c6 poisoned 40%",
+              "compared_with": "c5 poisoned 30%",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.09913043478260869,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c7 poisoned 50%",
+              "compared_with": "c6 poisoned 40%",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.09130434782608696,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c8 clean retrain",
+              "compared_with": "c7 poisoned 50%",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.8913043478260869,
+              "reason": "no gate"
+            }
+          ],
+          "worst_served_audit_accuracy": 0.09043478260869565,
+          "final_version": "c8 clean retrain",
+          "harmful_promoted": 5,
+          "harmful_offered": 5,
+          "clean_benign_rejected": []
+        },
+        "step_point": {
+          "decisions": [
+            {
+              "candidate": "c1 clean retrain",
+              "compared_with": "v1 origin",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c2 clean, twice the steps",
+              "compared_with": "c1 clean retrain",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9156521739130434,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c3 poisoned 10%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.8565217391304348,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c4 poisoned 20%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.7773913043478261,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c5 poisoned 30%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c6 poisoned 40%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.09913043478260869,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c7 poisoned 50%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.09130434782608696,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c8 clean retrain",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.8913043478260869,
+              "reason": "point step estimate"
+            }
+          ],
+          "worst_served_audit_accuracy": 0.9034782608695652,
+          "final_version": "c2 clean, twice the steps",
+          "harmful_promoted": 0,
+          "harmful_offered": 6,
+          "clean_benign_rejected": []
+        },
+        "step_origin_point": {
+          "decisions": [
+            {
+              "candidate": "c1 clean retrain",
+              "compared_with": "v1 origin",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c2 clean, twice the steps",
+              "compared_with": "c1 clean retrain",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9156521739130434,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c3 poisoned 10%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.8565217391304348,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c4 poisoned 20%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.7773913043478261,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c5 poisoned 30%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c6 poisoned 40%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.09913043478260869,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c7 poisoned 50%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.09130434782608696,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c8 clean retrain",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.8913043478260869,
+              "reason": "point step and origin estimates"
+            }
+          ],
+          "worst_served_audit_accuracy": 0.9034782608695652,
+          "final_version": "c2 clean, twice the steps",
+          "harmful_promoted": 0,
+          "harmful_offered": 6,
+          "clean_benign_rejected": []
+        },
+        "cce": {
+          "decisions": [
+            {
+              "candidate": "c1 clean retrain",
+              "compared_with": "v1 origin",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9034782608695652,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c2 clean, twice the steps",
+              "compared_with": "c1 clean retrain",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9156521739130434,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c3 poisoned 10%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.8565217391304348,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c4 poisoned 20%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.7773913043478261,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c5 poisoned 30%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.09043478260869565,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c6 poisoned 40%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.09913043478260869,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c7 poisoned 50%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.09130434782608696,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c8 clean retrain",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.8913043478260869,
+              "reason": "Drift gates did not pass: updated(step_drift)"
+            }
+          ],
+          "worst_served_audit_accuracy": 0.9034782608695652,
+          "final_version": "c2 clean, twice the steps",
+          "harmful_promoted": 0,
+          "harmful_offered": 6,
+          "clean_benign_rejected": []
+        }
+      },
+      "verdict": {
+        "PC1": true,
+        "PC2": true,
+        "PC3": false,
+        "PC4": true,
+        "H3": "supported"
+      }
+    },
+    "banknote-authentication": {
+      "rows": {
+        "train": 548,
+        "gate": 480,
+        "audit": 343
+      },
+      "origin_gate_accuracy": 0.9979166666666667,
+      "floor": 0.5708333333333333,
+      "qualifies": true,
+      "epsilon": 0.01,
+      "origin_audit_accuracy": 0.9970845481049563,
+      "audit_accuracy": {
+        "v1 origin": 0.9970845481049563,
+        "c1 clean retrain": 0.9941690962099126,
+        "c2 clean, twice the steps": 1.0,
+        "c3 poisoned 10%": 0.880466472303207,
+        "c4 poisoned 20%": 0.7288629737609329,
+        "c5 poisoned 30%": 0.6618075801749271,
+        "c6 poisoned 40%": 0.5685131195335277,
+        "c7 poisoned 50%": 0.4752186588921283,
+        "c8 clean retrain": 0.9941690962099126
+      },
+      "gate_accuracy": {
+        "v1 origin": 0.9979166666666667,
+        "c1 clean retrain": 0.9895833333333334,
+        "c2 clean, twice the steps": 1.0,
+        "c3 poisoned 10%": 0.8854166666666666,
+        "c4 poisoned 20%": 0.7791666666666667,
+        "c5 poisoned 30%": 0.6791666666666667,
+        "c6 poisoned 40%": 0.5833333333333334,
+        "c7 poisoned 50%": 0.5,
+        "c8 clean retrain": 0.9875
+      },
+      "arms": {
+        "no_gate": {
+          "decisions": [
+            {
+              "candidate": "c1 clean retrain",
+              "compared_with": "v1 origin",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9941690962099126,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c2 clean, twice the steps",
+              "compared_with": "c1 clean retrain",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 1.0,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c3 poisoned 10%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.880466472303207,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c4 poisoned 20%",
+              "compared_with": "c3 poisoned 10%",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.7288629737609329,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c5 poisoned 30%",
+              "compared_with": "c4 poisoned 20%",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.6618075801749271,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c6 poisoned 40%",
+              "compared_with": "c5 poisoned 30%",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.5685131195335277,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c7 poisoned 50%",
+              "compared_with": "c6 poisoned 40%",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.4752186588921283,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c8 clean retrain",
+              "compared_with": "c7 poisoned 50%",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9941690962099126,
+              "reason": "no gate"
+            }
+          ],
+          "worst_served_audit_accuracy": 0.4752186588921283,
+          "final_version": "c8 clean retrain",
+          "harmful_promoted": 5,
+          "harmful_offered": 5,
+          "clean_benign_rejected": []
+        },
+        "step_point": {
+          "decisions": [
+            {
+              "candidate": "c1 clean retrain",
+              "compared_with": "v1 origin",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9941690962099126,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c2 clean, twice the steps",
+              "compared_with": "c1 clean retrain",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 1.0,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c3 poisoned 10%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.880466472303207,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c4 poisoned 20%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.7288629737609329,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c5 poisoned 30%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.6618075801749271,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c6 poisoned 40%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.5685131195335277,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c7 poisoned 50%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.4752186588921283,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c8 clean retrain",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9941690962099126,
+              "reason": "point step estimate"
+            }
+          ],
+          "worst_served_audit_accuracy": 0.9941690962099126,
+          "final_version": "c2 clean, twice the steps",
+          "harmful_promoted": 0,
+          "harmful_offered": 5,
+          "clean_benign_rejected": [
+            "c8 clean retrain"
+          ]
+        },
+        "step_origin_point": {
+          "decisions": [
+            {
+              "candidate": "c1 clean retrain",
+              "compared_with": "v1 origin",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9941690962099126,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c2 clean, twice the steps",
+              "compared_with": "c1 clean retrain",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 1.0,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c3 poisoned 10%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.880466472303207,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c4 poisoned 20%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.7288629737609329,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c5 poisoned 30%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.6618075801749271,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c6 poisoned 40%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.5685131195335277,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c7 poisoned 50%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.4752186588921283,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c8 clean retrain",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9941690962099126,
+              "reason": "point step and origin estimates"
+            }
+          ],
+          "worst_served_audit_accuracy": 0.9941690962099126,
+          "final_version": "c2 clean, twice the steps",
+          "harmful_promoted": 0,
+          "harmful_offered": 5,
+          "clean_benign_rejected": [
+            "c8 clean retrain"
+          ]
+        },
+        "cce": {
+          "decisions": [
+            {
+              "candidate": "c1 clean retrain",
+              "compared_with": "v1 origin",
+              "promoted": false,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9941690962099126,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            },
+            {
+              "candidate": "c2 clean, twice the steps",
+              "compared_with": "v1 origin",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 1.0,
+              "reason": "Drift gates passed, promoted to production"
+            },
+            {
+              "candidate": "c3 poisoned 10%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.880466472303207,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c4 poisoned 20%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.7288629737609329,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c5 poisoned 30%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.6618075801749271,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c6 poisoned 40%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.5685131195335277,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c7 poisoned 50%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.4752186588921283,
+              "reason": "Drift gates did not pass: updated(both)"
+            },
+            {
+              "candidate": "c8 clean retrain",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.9941690962099126,
+              "reason": "Drift gates did not pass: updated(inconclusive)"
+            }
+          ],
+          "worst_served_audit_accuracy": 0.9970845481049563,
+          "final_version": "c2 clean, twice the steps",
+          "harmful_promoted": 0,
+          "harmful_offered": 5,
+          "clean_benign_rejected": [
+            "c1 clean retrain",
+            "c8 clean retrain"
+          ]
+        }
+      },
+      "verdict": {
+        "PC1": true,
+        "PC2": true,
+        "PC3": false,
+        "PC4": false,
+        "H3": "supported"
+      }
+    },
+    "madelon": {
+      "rows": {
+        "train": 1040,
+        "gate": 909,
+        "audit": 650
+      },
+      "origin_gate_accuracy": 0.5148514851485149,
+      "floor": 0.5115511551155115,
+      "qualifies": false
+    },
+    "phoneme": {
+      "rows": {
+        "train": 2161,
+        "gate": 1891,
+        "audit": 1351
+      },
+      "origin_gate_accuracy": 0.7858276044420941,
+      "floor": 0.6959280803807509,
+      "qualifies": false
+    },
+    "qsar-biodeg": {
+      "rows": {
+        "train": 422,
+        "gate": 369,
+        "audit": 263
+      },
+      "origin_gate_accuracy": 0.8265582655826558,
+      "floor": 0.6422764227642277,
+      "qualifies": true,
+      "epsilon": 0.05,
+      "origin_audit_accuracy": 0.8783269961977186,
+      "audit_accuracy": {
+        "v1 origin": 0.8783269961977186,
+        "c1 clean retrain": 0.8555133079847909,
+        "c2 clean, twice the steps": 0.870722433460076,
+        "c3 poisoned 10%": 0.7300380228136882,
+        "c4 poisoned 20%": 0.6349809885931559,
+        "c5 poisoned 30%": 0.55893536121673,
+        "c6 poisoned 40%": 0.4790874524714829,
+        "c7 poisoned 50%": 0.40304182509505704,
+        "c8 clean retrain": 0.8783269961977186
+      },
+      "gate_accuracy": {
+        "v1 origin": 0.8265582655826558,
+        "c1 clean retrain": 0.8509485094850948,
+        "c2 clean, twice the steps": 0.8157181571815718,
+        "c3 poisoned 10%": 0.6991869918699187,
+        "c4 poisoned 20%": 0.6287262872628726,
+        "c5 poisoned 30%": 0.5853658536585366,
+        "c6 poisoned 40%": 0.5149051490514905,
+        "c7 poisoned 50%": 0.45257452574525747,
+        "c8 clean retrain": 0.8509485094850948
+      },
+      "arms": {
+        "no_gate": {
+          "decisions": [
+            {
+              "candidate": "c1 clean retrain",
+              "compared_with": "v1 origin",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.8555133079847909,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c2 clean, twice the steps",
+              "compared_with": "c1 clean retrain",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.870722433460076,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c3 poisoned 10%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.7300380228136882,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c4 poisoned 20%",
+              "compared_with": "c3 poisoned 10%",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.6349809885931559,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c5 poisoned 30%",
+              "compared_with": "c4 poisoned 20%",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.55893536121673,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c6 poisoned 40%",
+              "compared_with": "c5 poisoned 30%",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.4790874524714829,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c7 poisoned 50%",
+              "compared_with": "c6 poisoned 40%",
+              "promoted": true,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.40304182509505704,
+              "reason": "no gate"
+            },
+            {
+              "candidate": "c8 clean retrain",
+              "compared_with": "c7 poisoned 50%",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.8783269961977186,
+              "reason": "no gate"
+            }
+          ],
+          "worst_served_audit_accuracy": 0.40304182509505704,
+          "final_version": "c8 clean retrain",
+          "harmful_promoted": 5,
+          "harmful_offered": 5,
+          "clean_benign_rejected": []
+        },
+        "step_point": {
+          "decisions": [
+            {
+              "candidate": "c1 clean retrain",
+              "compared_with": "v1 origin",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.8555133079847909,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c2 clean, twice the steps",
+              "compared_with": "c1 clean retrain",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.870722433460076,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c3 poisoned 10%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.7300380228136882,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c4 poisoned 20%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.6349809885931559,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c5 poisoned 30%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.55893536121673,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c6 poisoned 40%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.4790874524714829,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c7 poisoned 50%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.40304182509505704,
+              "reason": "point step estimate"
+            },
+            {
+              "candidate": "c8 clean retrain",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.8783269961977186,
+              "reason": "point step estimate"
+            }
+          ],
+          "worst_served_audit_accuracy": 0.8555133079847909,
+          "final_version": "c8 clean retrain",
+          "harmful_promoted": 0,
+          "harmful_offered": 5,
+          "clean_benign_rejected": []
+        },
+        "step_origin_point": {
+          "decisions": [
+            {
+              "candidate": "c1 clean retrain",
+              "compared_with": "v1 origin",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.8555133079847909,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c2 clean, twice the steps",
+              "compared_with": "c1 clean retrain",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.870722433460076,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c3 poisoned 10%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.7300380228136882,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c4 poisoned 20%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.6349809885931559,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c5 poisoned 30%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.55893536121673,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c6 poisoned 40%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.4790874524714829,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c7 poisoned 50%",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.40304182509505704,
+              "reason": "point step and origin estimates"
+            },
+            {
+              "candidate": "c8 clean retrain",
+              "compared_with": "c2 clean, twice the steps",
+              "promoted": true,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.8783269961977186,
+              "reason": "point step and origin estimates"
+            }
+          ],
+          "worst_served_audit_accuracy": 0.8555133079847909,
+          "final_version": "c8 clean retrain",
+          "harmful_promoted": 0,
+          "harmful_offered": 5,
+          "clean_benign_rejected": []
+        },
+        "cce": {
+          "decisions": [
+            {
+              "candidate": "c1 clean retrain",
+              "compared_with": "v1 origin",
+              "promoted": false,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.8555133079847909,
+              "reason": "Drift gates did not pass: updated(insufficient_evidence)"
+            },
+            {
+              "candidate": "c2 clean, twice the steps",
+              "compared_with": "v1 origin",
+              "promoted": false,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.870722433460076,
+              "reason": "Drift gates did not pass: updated(insufficient_evidence)"
+            },
+            {
+              "candidate": "c3 poisoned 10%",
+              "compared_with": "v1 origin",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.7300380228136882,
+              "reason": "Drift gates did not pass: updated(insufficient_evidence)"
+            },
+            {
+              "candidate": "c4 poisoned 20%",
+              "compared_with": "v1 origin",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.6349809885931559,
+              "reason": "Drift gates did not pass: updated(insufficient_evidence)"
+            },
+            {
+              "candidate": "c5 poisoned 30%",
+              "compared_with": "v1 origin",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.55893536121673,
+              "reason": "Drift gates did not pass: updated(insufficient_evidence)"
+            },
+            {
+              "candidate": "c6 poisoned 40%",
+              "compared_with": "v1 origin",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.4790874524714829,
+              "reason": "Drift gates did not pass: updated(insufficient_evidence)"
+            },
+            {
+              "candidate": "c7 poisoned 50%",
+              "compared_with": "v1 origin",
+              "promoted": false,
+              "harmful": true,
+              "harmful_against_origin": true,
+              "audit_accuracy": 0.40304182509505704,
+              "reason": "Drift gates did not pass: updated(insufficient_evidence)"
+            },
+            {
+              "candidate": "c8 clean retrain",
+              "compared_with": "v1 origin",
+              "promoted": false,
+              "harmful": false,
+              "harmful_against_origin": false,
+              "audit_accuracy": 0.8783269961977186,
+              "reason": "Drift gates did not pass: updated(insufficient_evidence)"
+            }
+          ],
+          "worst_served_audit_accuracy": 0.8783269961977186,
+          "final_version": "v1 origin",
+          "harmful_promoted": 0,
+          "harmful_offered": 5,
+          "clean_benign_rejected": [
+            "c1 clean retrain",
+            "c2 clean, twice the steps",
+            "c8 clean retrain"
+          ]
+        }
+      },
+      "verdict": {
+        "PC1": true,
+        "PC2": true,
+        "PC3": false,
+        "PC4": false,
+        "H3": "supported"
+      }
+    },
+    "numerai28.6": {
+      "rows": {
+        "train": 20000,
+        "gate": 20000,
+        "audit": 20000
+      },
+      "origin_gate_accuracy": 0.50615,
+      "floor": 0.5042,
+      "qualifies": false
+    }
+  },
+  "H3 overall": "supported (3 of 3 datasets)",
+  "replicate": 3,
+  "multiseed_preregistration_sha256": "fd8c1ef926d249d383664c982fe7ab26a7b548231d79dd975fcd8fa72e486516"
+}

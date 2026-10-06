@@ -1,0 +1,469 @@
+{
+  "preregistration_sha256": "9940bb8a3ef830be933c41cf5ffd318359f378c5b48ea8cbb6dffebe8d9f1986",
+  "seeds": {
+    "0": {
+      "slow_harm": {
+        "spambase": {
+          "gate_rows": 1610,
+          "minimum": 293,
+          "cce_promotions": 136,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.8634782608695653,
+          "step_only_served_eroded": true,
+          "verdict": "supported"
+        },
+        "banknote-authentication": {
+          "gate_rows": 480,
+          "minimum": 50,
+          "cce_promotions": 27,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.9883381924198251,
+          "step_only_served_eroded": false,
+          "verdict": "not exercised"
+        },
+        "qsar-biodeg": {
+          "gate_rows": 369,
+          "minimum": 424,
+          "cce_promotions": 0,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.8174904942965779,
+          "step_only_served_eroded": true,
+          "verdict": "supported"
+        }
+      },
+      "c2": {
+        "overall": "supported (3 of 3 datasets)",
+        "datasets": {
+          "spambase": {
+            "gate_rows": 1610,
+            "minimum": 293,
+            "cce_promotions": 3,
+            "harmful_promoted": 0,
+            "clean_rejected": [],
+            "H3": "supported"
+          },
+          "banknote-authentication": {
+            "gate_rows": 480,
+            "minimum": 50,
+            "cce_promotions": 2,
+            "harmful_promoted": 0,
+            "clean_rejected": [
+              "c8 clean retrain"
+            ],
+            "H3": "supported"
+          },
+          "qsar-biodeg": {
+            "gate_rows": 369,
+            "minimum": 424,
+            "cce_promotions": 0,
+            "harmful_promoted": 0,
+            "clean_rejected": [
+              "c1 clean retrain",
+              "c2 clean, twice the steps",
+              "c8 clean retrain"
+            ],
+            "H3": "supported"
+          }
+        }
+      },
+      "drift": {
+        "old-task rounds": 15,
+        "refused as insufficient": 5,
+        "admitted new Wings": 8,
+        "PD3": true,
+        "PD5 (cce, no_cce)": [
+          0.8933333333333333,
+          0.8953333333333333
+        ],
+        "verdict": "supported"
+      }
+    },
+    "1": {
+      "slow_harm": {
+        "spambase": {
+          "gate_rows": 1610,
+          "minimum": 293,
+          "cce_promotions": 144,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.8739130434782608,
+          "step_only_served_eroded": true,
+          "verdict": "supported"
+        },
+        "banknote-authentication": {
+          "gate_rows": 480,
+          "minimum": 50,
+          "cce_promotions": 1,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.9912536443148688,
+          "step_only_served_eroded": false,
+          "verdict": "not exercised"
+        },
+        "qsar-biodeg": {
+          "gate_rows": 369,
+          "minimum": 445,
+          "cce_promotions": 0,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.8326996197718631,
+          "step_only_served_eroded": true,
+          "verdict": "supported"
+        }
+      },
+      "c2": {
+        "overall": "supported (2 of 3 datasets)",
+        "datasets": {
+          "spambase": {
+            "gate_rows": 1610,
+            "minimum": 293,
+            "cce_promotions": 3,
+            "harmful_promoted": 1,
+            "clean_rejected": [],
+            "H3": "not supported"
+          },
+          "banknote-authentication": {
+            "gate_rows": 480,
+            "minimum": 50,
+            "cce_promotions": 1,
+            "harmful_promoted": 0,
+            "clean_rejected": [
+              "c1 clean retrain"
+            ],
+            "H3": "supported"
+          },
+          "qsar-biodeg": {
+            "gate_rows": 369,
+            "minimum": 445,
+            "cce_promotions": 0,
+            "harmful_promoted": 0,
+            "clean_rejected": [
+              "c1 clean retrain",
+              "c2 clean, twice the steps",
+              "c8 clean retrain"
+            ],
+            "H3": "supported"
+          }
+        }
+      },
+      "drift": {
+        "old-task rounds": 15,
+        "refused as insufficient": 15,
+        "admitted new Wings": 0,
+        "PD3": true,
+        "PD5 (cce, no_cce)": [
+          0.9019999999999999,
+          0.906
+        ],
+        "verdict": "supported"
+      }
+    },
+    "2": {
+      "slow_harm": {
+        "spambase": {
+          "gate_rows": 1610,
+          "minimum": 268,
+          "cce_promotions": 167,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.8669565217391304,
+          "step_only_served_eroded": true,
+          "verdict": "supported"
+        },
+        "banknote-authentication": {
+          "gate_rows": 480,
+          "minimum": 50,
+          "cce_promotions": 19,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.9825072886297376,
+          "step_only_served_eroded": false,
+          "verdict": "not exercised"
+        },
+        "qsar-biodeg": {
+          "gate_rows": 369,
+          "minimum": 424,
+          "cce_promotions": 0,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.8136882129277566,
+          "step_only_served_eroded": true,
+          "verdict": "supported"
+        }
+      },
+      "c2": {
+        "overall": "supported (2 of 3 datasets)",
+        "datasets": {
+          "spambase": {
+            "gate_rows": 1610,
+            "minimum": 268,
+            "cce_promotions": 3,
+            "harmful_promoted": 0,
+            "clean_rejected": [],
+            "H3": "supported"
+          },
+          "banknote-authentication": {
+            "gate_rows": 480,
+            "minimum": 50,
+            "cce_promotions": 3,
+            "harmful_promoted": 1,
+            "clean_rejected": [],
+            "H3": "not supported"
+          },
+          "qsar-biodeg": {
+            "gate_rows": 369,
+            "minimum": 424,
+            "cce_promotions": 0,
+            "harmful_promoted": 0,
+            "clean_rejected": [
+              "c1 clean retrain",
+              "c2 clean, twice the steps",
+              "c8 clean retrain"
+            ],
+            "H3": "supported"
+          }
+        }
+      },
+      "drift": {
+        "old-task rounds": 15,
+        "refused as insufficient": 5,
+        "admitted new Wings": 10,
+        "PD3": true,
+        "PD5 (cce, no_cce)": [
+          0.9206666666666667,
+          0.9206666666666667
+        ],
+        "verdict": "supported"
+      }
+    },
+    "3": {
+      "slow_harm": {
+        "spambase": {
+          "gate_rows": 1610,
+          "minimum": 246,
+          "cce_promotions": 146,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.8843478260869565,
+          "step_only_served_eroded": true,
+          "verdict": "supported"
+        },
+        "banknote-authentication": {
+          "gate_rows": 480,
+          "minimum": 50,
+          "cce_promotions": 16,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.9970845481049563,
+          "step_only_served_eroded": false,
+          "verdict": "not exercised"
+        },
+        "qsar-biodeg": {
+          "gate_rows": 369,
+          "minimum": 519,
+          "cce_promotions": 0,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.8783269961977186,
+          "step_only_served_eroded": true,
+          "verdict": "supported"
+        }
+      },
+      "c2": {
+        "overall": "supported (3 of 3 datasets)",
+        "datasets": {
+          "spambase": {
+            "gate_rows": 1610,
+            "minimum": 246,
+            "cce_promotions": 2,
+            "harmful_promoted": 0,
+            "clean_rejected": [],
+            "H3": "supported"
+          },
+          "banknote-authentication": {
+            "gate_rows": 480,
+            "minimum": 50,
+            "cce_promotions": 1,
+            "harmful_promoted": 0,
+            "clean_rejected": [
+              "c1 clean retrain",
+              "c8 clean retrain"
+            ],
+            "H3": "supported"
+          },
+          "qsar-biodeg": {
+            "gate_rows": 369,
+            "minimum": 519,
+            "cce_promotions": 0,
+            "harmful_promoted": 0,
+            "clean_rejected": [
+              "c1 clean retrain",
+              "c2 clean, twice the steps",
+              "c8 clean retrain"
+            ],
+            "H3": "supported"
+          }
+        }
+      },
+      "drift": {
+        "old-task rounds": 15,
+        "refused as insufficient": 7,
+        "admitted new Wings": 4,
+        "PD3": true,
+        "PD5 (cce, no_cce)": [
+          0.8786666666666665,
+          0.866
+        ],
+        "verdict": "supported"
+      }
+    },
+    "4": {
+      "slow_harm": {
+        "spambase": {
+          "gate_rows": 1610,
+          "minimum": 274,
+          "cce_promotions": 137,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.8791304347826087,
+          "step_only_served_eroded": true,
+          "verdict": "supported"
+        },
+        "banknote-authentication": {
+          "gate_rows": 480,
+          "minimum": 50,
+          "cce_promotions": 2,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.9854227405247813,
+          "step_only_served_eroded": false,
+          "verdict": "not exercised"
+        },
+        "qsar-biodeg": {
+          "gate_rows": 369,
+          "minimum": 452,
+          "cce_promotions": 0,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.8745247148288974,
+          "step_only_served_eroded": true,
+          "verdict": "supported"
+        }
+      },
+      "c2": {
+        "overall": "supported (3 of 3 datasets)",
+        "datasets": {
+          "spambase": {
+            "gate_rows": 1610,
+            "minimum": 274,
+            "cce_promotions": 2,
+            "harmful_promoted": 0,
+            "clean_rejected": [],
+            "H3": "supported"
+          },
+          "banknote-authentication": {
+            "gate_rows": 480,
+            "minimum": 50,
+            "cce_promotions": 2,
+            "harmful_promoted": 0,
+            "clean_rejected": [
+              "c2 clean, twice the steps"
+            ],
+            "H3": "supported"
+          },
+          "qsar-biodeg": {
+            "gate_rows": 369,
+            "minimum": 452,
+            "cce_promotions": 0,
+            "harmful_promoted": 0,
+            "clean_rejected": [
+              "c1 clean retrain",
+              "c2 clean, twice the steps",
+              "c8 clean retrain"
+            ],
+            "H3": "supported"
+          }
+        }
+      },
+      "drift": {
+        "old-task rounds": 15,
+        "refused as insufficient": 10,
+        "admitted new Wings": 4,
+        "PD3": true,
+        "PD5 (cce, no_cce)": [
+          0.9206666666666667,
+          0.9233333333333332
+        ],
+        "verdict": "supported"
+      }
+    },
+    "5": {
+      "slow_harm": {
+        "spambase": {
+          "gate_rows": 1610,
+          "minimum": 272,
+          "cce_promotions": 135,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.8547826086956521,
+          "step_only_served_eroded": true,
+          "verdict": "supported"
+        },
+        "banknote-authentication": {
+          "gate_rows": 480,
+          "minimum": 50,
+          "cce_promotions": 4,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.9825072886297376,
+          "step_only_served_eroded": false,
+          "verdict": "not exercised"
+        },
+        "qsar-biodeg": {
+          "gate_rows": 369,
+          "minimum": 568,
+          "cce_promotions": 0,
+          "cce_served_eroded": false,
+          "cce_final_audit": 0.870722433460076,
+          "step_only_served_eroded": true,
+          "verdict": "supported"
+        }
+      },
+      "c2": {
+        "overall": "supported (3 of 3 datasets)",
+        "datasets": {
+          "spambase": {
+            "gate_rows": 1610,
+            "minimum": 272,
+            "cce_promotions": 3,
+            "harmful_promoted": 0,
+            "clean_rejected": [],
+            "H3": "supported"
+          },
+          "banknote-authentication": {
+            "gate_rows": 480,
+            "minimum": 50,
+            "cce_promotions": 3,
+            "harmful_promoted": 0,
+            "clean_rejected": [],
+            "H3": "supported"
+          },
+          "qsar-biodeg": {
+            "gate_rows": 369,
+            "minimum": 568,
+            "cce_promotions": 0,
+            "harmful_promoted": 0,
+            "clean_rejected": [
+              "c1 clean retrain",
+              "c2 clean, twice the steps",
+              "c8 clean retrain"
+            ],
+            "H3": "supported"
+          }
+        }
+      },
+      "drift": {
+        "old-task rounds": 15,
+        "refused as insufficient": 3,
+        "admitted new Wings": 11,
+        "PD3": true,
+        "PD5 (cce, no_cce)": [
+          0.9066666666666666,
+          0.9073333333333334
+        ],
+        "verdict": "not supported"
+      }
+    }
+  },
+  "verdict": {
+    "PG1 cce never serves an eroded version": true,
+    "PG2 qsar-biodeg refused, spambase and banknote still promote": true,
+    "fix": "supported"
+  }
+}

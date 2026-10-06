@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UMNA — adding capabilities without silent regression</title>
+<meta name="description" content="UMNA benchmark results: a frozen Core, capability routing and conservative promotion. Every test preregistered and hashed; every result file verifiable in your browser.">
+<meta property="og:title" content="UMNA — adding capabilities without silent regression">
+<meta property="og:description" content="A frozen Core, capability routing, calibrated admission and a promotion gate. Preregistered results you can verify in your browser.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234a3aa7'/%3E%3Ccircle cx='16' cy='16' r='5' fill='white'/%3E%3Ccircle cx='7' cy='16' r='3' fill='white' opacity='.7'/%3E%3Ccircle cx='25' cy='16' r='3' fill='white' opacity='.7'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top"><i aria-hidden="true"></i>UMNA</a>
+    <nav aria-label="Sections">
+      <a href="#architecture">Architecture</a>
+      <a href="#claims">Claims</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#gate">Try the gate</a>
+      <a href="#tests">Tests</a>
+      <a href="#verify">Verify</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">Unified Modular Neural Architecture · v0.1.0 · preliminary</p>
+    <h1>Adding capabilities without silent regression</h1>
+    <p class="lede">UMNA is a hypothesis about building AI systems that keep learning new things without quietly breaking what they already do: a frozen shared <strong>Core</strong>, small capability modules called <strong>Wings</strong>, a planner that picks Wings by value against cost, a calibrated gate on every answer, and a statistical gate on every update.</p>
+    <div class="hero-actions">
+      <a class="button" href="https://doi.org/10.5281/zenodo.23097652">Read the preprint</a>
+      <a class="button ghost" href="#verify">Verify the results yourself</a>
+      <a class="button ghost" href="https://github.com/nabvian/umna-benchmarks">GitHub</a>
+    </div>
+    <div class="stats" id="hero-stats" aria-label="Headline results"></div>
+    <p class="fineprint">Every test was preregistered and SHA-256 hashed before it ran. Nothing is dropped: invalid and superseded runs stay in the record. The source code is private for now; every result file is tied to a GPG-signed commit of it.</p>
+  </div>
+</section>
+
+<section id="problem" class="band">
+  <div class="wrap two-col">
+    <div>
+      <p class="eyebrow">The problem</p>
+      <h2>Every update touches everything</h2>
+      <p>Most systems gain new abilities by fine-tuning one shared set of weights. A change that improves one task can make another worse, and often nobody notices until it matters. Mixture-of-experts routers are learned too, with no notion of what each expert is for. And it is usually hard to say which parts produced an answer, or whether last week's update was allowed to change it.</p>
+    </div>
+    <div>
+      <p class="eyebrow">The hypothesis</p>
+      <h2>Five properties that can fail</h2>
+      <ol class="numbered">
+        <li>Add new capabilities without changing any existing one.</li>
+        <li>Send each request to the modules that can serve it, without being told which module belongs to which task.</li>
+        <li>Keep every protected capability within a declared budget over any sequence of updates, including slow ones.</li>
+        <li>Decline rather than answer without calibrated support.</li>
+        <li>Record, for every answer, what produced it and why it was allowed.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="architecture">
+  <div class="wrap">
+    <p class="eyebrow">Proposed architecture</p>
+    <h2>How a request flows</h2>
+    <p class="section-copy">Select a component to read what it does. The shape does not depend on one data type or model size.</p>
+    <div class="arch">
+      <div class="arch-flow" role="list">
+        <button class="arch-node" data-node="request" role="listitem"><span>request</span></button>
+        <span class="arch-arrow" aria-hidden="true">↓</span>
+        <button class="arch-node primary" data-node="planner" role="listitem"><b>Planner · NICE-R</b><span>which Wings, alone or combined, value vs cost</span></button>
+        <span class="arch-arrow" aria-hidden="true">↓</span>
+        <button class="arch-node primary" data-node="admission" role="listitem"><b>Admission</b><span>calibrated for this set of Wings? else decline</span></button>
+        <span class="arch-arrow" aria-hidden="true">↓</span>
+        <button class="arch-node primary" data-node="execution" role="listitem"><b>Execution</b><span>Wings run through the frozen Core, fused</span></button>
+        <span class="arch-arrow" aria-hidden="true">↓</span>
+        <button class="arch-node" data-node="trace" role="listitem"><span>answer + trace</span></button>
+      </div>
+      <div class="arch-side" role="list">
+        <button class="arch-node" data-node="registry" role="listitem"><b>Registry</b><span>Wings, versions, host-measured cost → feeds the planner</span></button>
+        <button class="arch-node" data-node="core" role="listitem"><b>Frozen Core + Wings</b><span>shared network, hash-pinned; capabilities as small modules</span></button>
+        <button class="arch-node" data-node="cce" role="listitem"><b>CCE promotion gate</b><span>new versions run in shadow, then must pass drift budgets</span></button>
+        <button class="arch-node" data-node="interrupts" role="listitem"><b>Safety interrupts</b><span>guard, escalate or decline; never silently replace</span></button>
+      </div>
+      <article class="arch-detail" id="arch-detail" aria-live="polite"></article>
+    </div>
+  </div>
+</section>
+
+<section id="claims" class="band">
+  <div class="wrap">
+    <p class="eyebrow">Where each claim stands</p>
+    <h2>Scoreboard, including what failed</h2>
+    <div class="claims" id="claims-list"></div>
+    <div class="card">
+      <h3>Replication on five further seeds</h3>
+      <p class="section-copy small">A claim replicates only if its own preregistered verdict holds on all five. Every random generator is reseeded; the Core, tasks, datasets, rules and hyperparameters stay fixed.</p>
+      <div id="chart-multiseed" class="chart"></div>
+      <details class="table-view"><summary>Table view</summary><div id="table-multiseed"></div></details>
+    </div>
+  </div>
+</section>
+
+<section id="evidence">
+  <div class="wrap">
+    <p class="eyebrow">Evidence · read from the raw result files</p>
+    <h2>What the tests show</h2>
+
+    <article class="card evidence">
+      <header class="evidence-head">
+        <div><h3>Harmful updates never reach the user</h3><p class="muted">C2 · RESULTS §3 · claim H3</p></div>
+        <div class="seg" role="tablist" aria-label="Dataset" id="seg-harm"></div>
+      </header>
+      <p class="section-copy small">A sequence of candidate versions: clean retrains, then labels inverted in one region of the input space (10% to 50%), then a clean retrain. The line is the audit accuracy of the version actually being served after each candidate is offered.</p>
+      <div class="legend" aria-hidden="true"><span><i class="sw s2"></i>no gate</span><span><i class="sw s1"></i>CCE</span></div>
+      <div id="chart-harm" class="chart"></div>
+      <p class="callout" id="harm-callout"></p>
+      <details class="table-view"><summary>Table view</summary><div id="table-harm"></div></details>
+    </article>
+
+    <article class="card evidence">
+      <header class="evidence-head">
+        <div><h3>Slow erosion: one more poisoned label per version</h3><p class="muted">RESULTS §7 and §10 · claim H3-slow</p></div>
+        <div class="seg" role="tablist" aria-label="Dataset" id="seg-slow"></div>
+      </header>
+      <p class="section-copy small">Every single step looks harmless, so the step test alone lets accuracy slide. CCE also compares each candidate with the very first version, within the cumulative budget E (dashed line).</p>
+      <div class="legend" aria-hidden="true"><span><i class="sw s2"></i>no gate</span><span><i class="sw s3"></i>step test only</span><span><i class="sw s1"></i>CCE</span><span><i class="sw dash"></i>origin − E</span></div>
+      <div id="chart-slow" class="chart"></div>
+      <p class="callout" id="slow-callout"></p>
+      <details class="table-view"><summary>Table view</summary><div id="table-slow"></div></details>
+    </article>
+
+    <div class="grid2">
+      <article class="card evidence">
+        <h3>Adding tasks: frozen Core vs a fine-tuned shared network</h3>
+        <p class="muted">Drift · RESULTS §5 · claim HD</p>
+        <p class="section-copy small">Accuracy on the first task as five more are added one at a time. The Core's hash never changed and old Wings' outputs stayed bit-identical.</p>
+        <div class="legend" aria-hidden="true"><span><i class="sw s1"></i>UMNA</span><span><i class="sw s2"></i>shared network</span></div>
+        <div id="chart-drift" class="chart"></div>
+        <details class="table-view"><summary>Table view</summary><div id="table-drift"></div></details>
+      </article>
+      <article class="card evidence">
+        <h3>Accuracy at the same coverage</h3>
+        <p class="muted">RESULTS §8 · six seeds, 95% intervals</p>
+        <p class="section-copy small">UMNA declines rows it cannot answer with calibrated confidence, so both systems are scored on the same share of rows. Shared network minus UMNA: left of zero means UMNA is more accurate.</p>
+        <div id="chart-coverage" class="chart"></div>
+        <details class="table-view"><summary>Table view</summary><div id="table-coverage"></div></details>
+      </article>
+    </div>
+
+    <article class="card evidence">
+      <h3>Routing by capability, without being told the mapping</h3>
+      <p class="muted">RESULTS §4 · claim HC · net correct rate (right minus wrong, over all rows)</p>
+      <p class="section-copy small">Four tasks, three Wings each, plus distractor Wings. NICE-R is not told which Wing serves which task; the gate routers are normal learned routers.</p>
+      <div class="legend" aria-hidden="true"><span><i class="sw s1"></i>NICE-R</span><span><i class="sw s2"></i>gate top-1</span><span><i class="sw s3"></i>gate top-2</span><span><i class="sw s4"></i>greedy</span></div>
+      <div id="chart-routing" class="chart"></div>
+      <p class="callout" id="routing-callout"></p>
+      <details class="table-view"><summary>Table view</summary><div id="table-routing"></div></details>
+    </article>
+  </div>
+</section>
+
+<section id="gate" class="band">
+  <div class="wrap">
+    <p class="eyebrow">Interactive</p>
+    <h2>Try the promotion gate's rules</h2>
+    <p class="section-copy">Two calculators built from the rules as published. They are not the UMNA source, which is private; the first reproduces the gate minimums recorded in the result files exactly.</p>
+    <div class="grid2">
+      <form class="card calc" id="calc-rows">
+        <h3>When can the gate decide at all?</h3>
+        <p class="section-copy small">With fewer rows than a one-sided non-inferiority test at margin E needs, the gate does not decide and nothing is promoted. Minimum rows = ((z<sub>α</sub> + z<sub>β</sub>) · √(2·var) / E)², never below the tier floor, where var is the sample variance of the origin's per-row correctness.</p>
+        <div class="presets" id="presets"></div>
+        <div class="fields">
+          <label>Origin accuracy on gate rows <output name="p_out"></output><input type="range" name="p" min="0.5" max="0.999" step="any" value="0.9111801242236025"></label>
+          <label>Gate rows available <input type="number" name="n" min="10" max="100000" value="1610"></label>
+          <label>Budget E <output name="e_out"></output><input type="range" name="e" min="0.01" max="0.2" step="0.005" value="0.05"></label>
+          <label>α (one-sided) <select name="alpha"><option>0.01</option><option>0.025</option><option>0.05</option><option selected>0.10</option></select></label>
+          <label>Power <select name="power"><option selected>0.80</option><option>0.90</option><option>0.95</option></select></label>
+          <label>Tier floor <input type="number" name="floor" min="0" max="10000" value="50"></label>
+        </div>
+        <div class="result" id="rows-result" aria-live="polite"></div>
+        <p class="hint">α = 0.10 and power 0.80 are the values that reproduce the recorded minimums: 293 (spambase), 424 (qsar-biodeg) and the floor of 50 (banknote).</p>
+      </form>
+      <form class="card calc" id="calc-erosion">
+        <h3>Why a cumulative budget, not just a step test?</h3>
+        <p class="section-copy small">A toy, noise-free model of the two rules. Each new version is a little worse than the one serving. The step test compares it with the version serving now (tolerance ε); CCE also compares it with the very first version (budget E).</p>
+        <div class="fields">
+          <label>Loss per version <output name="d_out"></output><input type="range" name="d" min="0.001" max="0.02" step="0.001" value="0.004"></label>
+          <label>Step tolerance ε <output name="eps_out"></output><input type="range" name="eps" min="0.005" max="0.05" step="0.005" value="0.02"></label>
+          <label>Cumulative budget E <output name="E_out"></output><input type="range" name="E" min="0.01" max="0.2" step="0.01" value="0.05"></label>
+          <label>Versions offered <output name="v_out"></output><input type="range" name="v" min="10" max="120" step="1" value="60"></label>
+        </div>
+        <div class="legend" aria-hidden="true"><span><i class="sw s3"></i>step test only</span><span><i class="sw s1"></i>CCE (step + budget)</span><span><i class="sw dash"></i>origin − E</span></div>
+        <div id="chart-toy" class="chart"></div>
+        <div class="result" id="toy-result" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="tests">
+  <div class="wrap">
+    <p class="eyebrow">Test by test · all run on 2026-09-29</p>
+    <h2>Ten preregistered tests</h2>
+    <p class="section-copy">Each test names its preregistration, written and hashed before it ran, and its raw output. Select a test for the details.</p>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<section id="verify" class="band">
+  <div class="wrap">
+    <p class="eyebrow">Don't trust, verify</p>
+    <h2>Check every hash in your browser</h2>
+    <p class="section-copy">PROVENANCE.md lists the SHA-256 of every preregistration and every result file, and each result file records the hash of the preregistration it ran under. This downloads the published files and recomputes all of it locally with the Web Crypto API.</p>
+    <div class="card">
+      <div class="row-actions">
+        <button type="button" class="button" id="verify-quick">Verify the 19 preregistrations (100 KB)</button>
+        <button type="button" class="button ghost" id="verify-all">Verify all 94 files (24 MB)</button>
+        <span class="muted" id="verify-status" role="status" aria-live="polite"></span>
+      </div>
+      <div class="progress" hidden id="verify-progress"><i></i></div>
+      <div id="verify-table"></div>
+    </div>
+  </div>
+</section>
+
+<section id="provenance">
+  <div class="wrap">
+    <p class="eyebrow">Provenance</p>
+    <h2>Signed source commits</h2>
+    <p class="section-copy" id="provenance-copy"></p>
+    <div class="card"><div id="commits-table"></div></div>
+  </div>
+</section>
+
+<section id="scope" class="band">
+  <div class="wrap two-col">
+    <div>
+      <p class="eyebrow">Status, honestly</p>
+      <h2>Early evidence, not proof</h2>
+      <ul class="plain">
+        <li>Small models and simple public data: OpenML CC18 binary tasks and UCI Multiple Features.</li>
+        <li>NICE-R's advantage over simpler planners did not replicate across seeds, and combining Wings helped on only one dataset of seven. Both claims are open.</li>
+        <li>The promotion gate never let a poisoned version through, but two harmless-looking clean retrains that were slightly worse did pass.</li>
+        <li>Runs that route requests use host-measured latency, so two runs of the same seed can route a few rows differently.</li>
+      </ul>
+    </div>
+    <div>
+      <p class="eyebrow">Why the code is not open yet</p>
+      <h2>Evidence first</h2>
+      <p>Releasing code for claims that have not been shown to hold invites people to build on them. The evidence is published first, in a form anyone can check. When the core claims hold up in preregistered tests that replicate, on more than one kind of data, and survive outside review, the project will be released under AGPL-3.0 on an open-core model.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>Cite:</strong> Koushik Das (2026). <em>Adding Capabilities Without Silent Regression: A Frozen Core, Capability Routing, and Conservative Promotion.</em> Preprint v0.1.0. Zenodo. <a href="https://doi.org/10.5281/zenodo.23097652">doi:10.5281/zenodo.23097652</a></p>
+    <p>Results, text and figures: CC BY 4.0. Data: OpenML and the UCI repository, with thanks to their authors. <a href="https://github.com/nabvian/umna-benchmarks">Repository</a> · <a href="https://colab.research.google.com/github/nabvian/umna-benchmarks/blob/main/notebooks/umna_results_viewer.ipynb">Colab viewer</a> · <a href="raw/RESULTS.md">RESULTS.md</a> · <a href="raw/PROVENANCE.md">PROVENANCE.md</a></p>
+  </div>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

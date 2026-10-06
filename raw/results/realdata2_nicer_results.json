@@ -1,0 +1,1626 @@
+{
+  "preregistration_sha256": "b40ad1084ece4e65f3537033d2c6c5edf710024cc24ff7cdaa2439c4ce03310d",
+  "tuning_budget": {
+    "greedy": 0,
+    "density": 0,
+    "topk": 0,
+    "gates": 0,
+    "pairs": 0,
+    "beam": 0,
+    "exhaustive": 0,
+    "nice_r": 5
+  },
+  "datasets": {
+    "spambase": {
+      "groups": [
+        19,
+        19,
+        19
+      ],
+      "flops": {
+        "view_1": 2416.0,
+        "view_2": 2416.0,
+        "view_3": 2416.0,
+        "view_1_copy": 2416.0,
+        "generalist": 7248.0,
+        "noise": 2416.0
+      },
+      "tuning": {
+        "trials": {
+          "0.0": 0.8383333333333334,
+          "0.02": 0.8208333333333333,
+          "0.05": 0.8208333333333333,
+          "0.1": 0.8208333333333333,
+          "0.2": 0.8208333333333333
+        },
+        "eta": 0.0
+      },
+      "mechanism": {
+        "best_single": [
+          "generalist"
+        ],
+        "best_graph": [
+          "view_1",
+          "view_2",
+          "generalist"
+        ],
+        "single_accuracy": 0.92,
+        "graph_accuracy": 0.905,
+        "composition_helps": false,
+        "majority_floor": 0.6025
+      },
+      "arms": {
+        "tight": {
+          "greedy": {
+            "coverage": 1.0,
+            "selective_accuracy": 0.90875,
+            "net_correct_rate": 0.8175,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 4832.0,
+            "regret": 0.08062019188152697,
+            "admission_rate": 1.0,
+            "seconds": 1.9
+          },
+          "density": {
+            "coverage": 1.0,
+            "selective_accuracy": 0.90875,
+            "net_correct_rate": 0.8175,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 4832.0,
+            "regret": 0.08062019188152697,
+            "admission_rate": 1.0,
+            "seconds": 7.6
+          },
+          "topk": {
+            "coverage": 1.0,
+            "selective_accuracy": 0.90875,
+            "net_correct_rate": 0.8175,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 4832.0,
+            "regret": 0.08062019188152697,
+            "admission_rate": 1.0,
+            "seconds": 1.5
+          },
+          "gates": {
+            "coverage": 1.0,
+            "selective_accuracy": 0.90875,
+            "net_correct_rate": 0.8175,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 4832.0,
+            "regret": 0.08062019188152697,
+            "admission_rate": 1.0,
+            "seconds": 1.8
+          },
+          "pairs": {
+            "coverage": 0.97375,
+            "selective_accuracy": 0.9101412066752247,
+            "net_correct_rate": 0.79875,
+            "graph_size": 1.995,
+            "multi_wing_share": 0.995,
+            "mean_flops": 4819.92,
+            "regret": 0.08310506064684266,
+            "admission_rate": 1.0,
+            "seconds": 2.6
+          },
+          "beam": {
+            "coverage": 1.0,
+            "selective_accuracy": 0.90875,
+            "net_correct_rate": 0.8175,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 4832.0,
+            "regret": 0.08062019188152697,
+            "admission_rate": 1.0,
+            "seconds": 2.9
+          },
+          "exhaustive": {
+            "coverage": 1.0,
+            "selective_accuracy": 0.90875,
+            "net_correct_rate": 0.8175,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 4832.0,
+            "regret": 0.08062019188152697,
+            "admission_rate": 1.0,
+            "seconds": 3.1
+          },
+          "nice_r": {
+            "coverage": 0.9775,
+            "selective_accuracy": 0.9207161125319693,
+            "net_correct_rate": 0.8225,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 4832.0,
+            "regret": 0.09150586106314117,
+            "admission_rate": 1.0,
+            "seconds": 4.7
+          }
+        },
+        "loose": {
+          "greedy": {
+            "coverage": 0.99375,
+            "selective_accuracy": 0.9169811320754717,
+            "net_correct_rate": 0.82875,
+            "graph_size": 3.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 12080.0,
+            "regret": 0.058171551289143746,
+            "admission_rate": 1.0,
+            "seconds": 2.8
+          },
+          "density": {
+            "coverage": 0.99375,
+            "selective_accuracy": 0.9169811320754717,
+            "net_correct_rate": 0.82875,
+            "graph_size": 3.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 12080.0,
+            "regret": 0.058171551289143746,
+            "admission_rate": 1.0,
+            "seconds": 35.9
+          },
+          "topk": {
+            "coverage": 0.99625,
+            "selective_accuracy": 0.917189460476788,
+            "net_correct_rate": 0.83125,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 9664.0,
+            "regret": 0.06067449013485174,
+            "admission_rate": 1.0,
+            "seconds": 1.6
+          },
+          "gates": {
+            "coverage": 0.995,
+            "selective_accuracy": 0.914572864321608,
+            "net_correct_rate": 0.825,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 14496.0,
+            "regret": 0.06006502983506459,
+            "admission_rate": 1.0,
+            "seconds": 2.3
+          },
+          "pairs": {
+            "coverage": 0.9775,
+            "selective_accuracy": 0.9207161125319693,
+            "net_correct_rate": 0.8225,
+            "graph_size": 1.99375,
+            "multi_wing_share": 0.99375,
+            "mean_flops": 9648.9,
+            "regret": 0.06440378914305782,
+            "admission_rate": 1.0,
+            "seconds": 2.9
+          },
+          "beam": {
+            "coverage": 0.99375,
+            "selective_accuracy": 0.9169811320754717,
+            "net_correct_rate": 0.82875,
+            "graph_size": 3.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 12080.0,
+            "regret": 0.058171551289143746,
+            "admission_rate": 1.0,
+            "seconds": 5.1
+          },
+          "exhaustive": {
+            "coverage": 0.99375,
+            "selective_accuracy": 0.9169811320754717,
+            "net_correct_rate": 0.82875,
+            "graph_size": 3.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 12080.0,
+            "regret": 0.058171551289143746,
+            "admission_rate": 1.0,
+            "seconds": 4.5
+          },
+          "nice_r": {
+            "coverage": 0.99875,
+            "selective_accuracy": 0.9198998748435544,
+            "net_correct_rate": 0.83875,
+            "graph_size": 1.0,
+            "multi_wing_share": 0.0,
+            "mean_flops": 7248.0,
+            "regret": 0.088229168511034,
+            "admission_rate": 1.0,
+            "seconds": 8.4
+          }
+        }
+      },
+      "pareto_dominated_by": {
+        "tight": [],
+        "loose": []
+      }
+    },
+    "banknote-authentication": {
+      "groups": [
+        2,
+        1,
+        1
+      ],
+      "flops": {
+        "view_1": 720.0,
+        "view_2": 720.0,
+        "view_3": 720.0,
+        "view_1_copy": 720.0,
+        "generalist": 2160.0,
+        "noise": 720.0
+      },
+      "tuning": {
+        "trials": {
+          "0.0": 0.8317073170731708,
+          "0.02": 0.8292682926829269,
+          "0.05": 0.8292682926829269,
+          "0.1": 0.8292682926829269,
+          "0.2": 0.8292682926829269
+        },
+        "eta": 0.2
+      },
+      "mechanism": {
+        "best_single": [
+          "generalist"
+        ],
+        "best_graph": [
+          "view_2",
+          "view_3",
+          "generalist"
+        ],
+        "single_accuracy": 0.9963503649635036,
+        "graph_accuracy": 0.9963503649635036,
+        "composition_helps": false,
+        "majority_floor": 0.5474452554744526
+      },
+      "arms": {
+        "tight": {
+          "greedy": {
+            "coverage": 0.8832116788321168,
+            "selective_accuracy": 0.9256198347107438,
+            "net_correct_rate": 0.7518248175182481,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1440.0,
+            "regret": 0.11178438453725202,
+            "admission_rate": 1.0,
+            "seconds": 0.7
+          },
+          "density": {
+            "coverage": 0.8832116788321168,
+            "selective_accuracy": 0.9256198347107438,
+            "net_correct_rate": 0.7518248175182481,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1440.0,
+            "regret": 0.11178438453725202,
+            "admission_rate": 1.0,
+            "seconds": 3.7
+          },
+          "topk": {
+            "coverage": 0.8832116788321168,
+            "selective_accuracy": 0.9256198347107438,
+            "net_correct_rate": 0.7518248175182481,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1440.0,
+            "regret": 0.11178438453725202,
+            "admission_rate": 1.0,
+            "seconds": 0.5
+          },
+          "gates": {
+            "coverage": 0.8832116788321168,
+            "selective_accuracy": 0.9256198347107438,
+            "net_correct_rate": 0.7518248175182481,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1440.0,
+            "regret": 0.11178438453725202,
+            "admission_rate": 1.0,
+            "seconds": 1.1
+          },
+          "pairs": {
+            "coverage": 0.8686131386861314,
+            "selective_accuracy": 0.9369747899159664,
+            "net_correct_rate": 0.7591240875912408,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1440.0,
+            "regret": 0.11431851795538238,
+            "admission_rate": 0.9927007299270073,
+            "seconds": 1.3
+          },
+          "beam": {
+            "coverage": 0.8832116788321168,
+            "selective_accuracy": 0.9256198347107438,
+            "net_correct_rate": 0.7518248175182481,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1440.0,
+            "regret": 0.11178438453725202,
+            "admission_rate": 1.0,
+            "seconds": 1.3
+          },
+          "exhaustive": {
+            "coverage": 0.8832116788321168,
+            "selective_accuracy": 0.9256198347107438,
+            "net_correct_rate": 0.7518248175182481,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1440.0,
+            "regret": 0.11178438453725202,
+            "admission_rate": 1.0,
+            "seconds": 1.3
+          },
+          "nice_r": {
+            "coverage": 0.8722627737226277,
+            "selective_accuracy": 0.9288702928870293,
+            "net_correct_rate": 0.7481751824817519,
+            "graph_size": 1.0,
+            "multi_wing_share": 0.0,
+            "mean_flops": 720.0,
+            "regret": 0.14576457814175658,
+            "admission_rate": 1.0,
+            "seconds": 0.9
+          }
+        },
+        "loose": {
+          "greedy": {
+            "coverage": 0.927007299270073,
+            "selective_accuracy": 1.0,
+            "net_correct_rate": 0.927007299270073,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 2880.0,
+            "regret": 0.013751787132739118,
+            "admission_rate": 1.0,
+            "seconds": 0.9
+          },
+          "density": {
+            "coverage": 0.927007299270073,
+            "selective_accuracy": 1.0,
+            "net_correct_rate": 0.927007299270073,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 2880.0,
+            "regret": 0.013751787132739118,
+            "admission_rate": 1.0,
+            "seconds": 14.2
+          },
+          "topk": {
+            "coverage": 0.9343065693430657,
+            "selective_accuracy": 1.0,
+            "net_correct_rate": 0.9343065693430657,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 2880.0,
+            "regret": 0.02647752508431813,
+            "admission_rate": 1.0,
+            "seconds": 0.6
+          },
+          "gates": {
+            "coverage": 0.9598540145985401,
+            "selective_accuracy": 0.9695817490494296,
+            "net_correct_rate": 0.9014598540145985,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 4320.0,
+            "regret": 0.03686794663976134,
+            "admission_rate": 1.0,
+            "seconds": 0.8
+          },
+          "pairs": {
+            "coverage": 0.8905109489051095,
+            "selective_accuracy": 1.0,
+            "net_correct_rate": 0.8905109489051095,
+            "graph_size": 1.9854014598540146,
+            "multi_wing_share": 0.9854014598540146,
+            "mean_flops": 2869.4890510948903,
+            "regret": 0.014713733748626383,
+            "admission_rate": 0.9854014598540146,
+            "seconds": 1.2
+          },
+          "beam": {
+            "coverage": 0.927007299270073,
+            "selective_accuracy": 1.0,
+            "net_correct_rate": 0.927007299270073,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 2880.0,
+            "regret": 0.013751787132739118,
+            "admission_rate": 1.0,
+            "seconds": 2.1
+          },
+          "exhaustive": {
+            "coverage": 0.927007299270073,
+            "selective_accuracy": 1.0,
+            "net_correct_rate": 0.927007299270073,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 2880.0,
+            "regret": 0.013751787132739118,
+            "admission_rate": 1.0,
+            "seconds": 1.8
+          },
+          "nice_r": {
+            "coverage": 0.9452554744525548,
+            "selective_accuracy": 1.0,
+            "net_correct_rate": 0.9452554744525548,
+            "graph_size": 1.0,
+            "multi_wing_share": 0.0,
+            "mean_flops": 2160.0,
+            "regret": 0.014378660601879898,
+            "admission_rate": 1.0,
+            "seconds": 1.0
+          }
+        }
+      },
+      "pareto_dominated_by": {
+        "tight": [],
+        "loose": []
+      }
+    },
+    "madelon": {
+      "groups": [
+        166,
+        167,
+        167
+      ],
+      "flops": {
+        "view_1": 16592.0,
+        "view_2": 16592.0,
+        "view_3": 16592.0,
+        "view_1_copy": 16592.0,
+        "generalist": 49776.0,
+        "noise": 16592.0
+      },
+      "tuning": {
+        "trials": {
+          "0.0": 0.019230769230769232,
+          "0.02": 0.017948717948717947,
+          "0.05": 0.005128205128205128,
+          "0.1": 0.005128205128205128,
+          "0.2": 0.005128205128205128
+        },
+        "eta": 0.02
+      },
+      "mechanism": {
+        "best_single": [
+          "view_2"
+        ],
+        "best_graph": [
+          "view_1",
+          "view_2",
+          "generalist"
+        ],
+        "single_accuracy": 0.551923076923077,
+        "graph_accuracy": 0.5326923076923077,
+        "composition_helps": false,
+        "majority_floor": 0.5019230769230769
+      },
+      "arms": {
+        "tight": {
+          "greedy": {
+            "coverage": 0.2846153846153846,
+            "selective_accuracy": 0.5743243243243243,
+            "net_correct_rate": 0.04230769230769231,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 33184.0,
+            "regret": 0.20768506025114475,
+            "admission_rate": 1.0,
+            "seconds": 2.0
+          },
+          "density": {
+            "coverage": 0.2846153846153846,
+            "selective_accuracy": 0.5743243243243243,
+            "net_correct_rate": 0.04230769230769231,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 33184.0,
+            "regret": 0.20768506025114475,
+            "admission_rate": 1.0,
+            "seconds": 6.1
+          },
+          "topk": {
+            "coverage": 0.2846153846153846,
+            "selective_accuracy": 0.5743243243243243,
+            "net_correct_rate": 0.04230769230769231,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 33184.0,
+            "regret": 0.20768506025114475,
+            "admission_rate": 1.0,
+            "seconds": 1.7
+          },
+          "gates": {
+            "coverage": 0.2846153846153846,
+            "selective_accuracy": 0.5743243243243243,
+            "net_correct_rate": 0.04230769230769231,
+            "graph_size": 1.998076923076923,
+            "multi_wing_share": 0.9980769230769231,
+            "mean_flops": 33152.092307692306,
+            "regret": 0.20771643965674705,
+            "admission_rate": 0.9980769230769231,
+            "seconds": 1.8
+          },
+          "pairs": {
+            "coverage": 0.3019230769230769,
+            "selective_accuracy": 0.5732484076433121,
+            "net_correct_rate": 0.04423076923076923,
+            "graph_size": 1.9903846153846154,
+            "multi_wing_share": 0.9903846153846154,
+            "mean_flops": 33024.46153846154,
+            "regret": 0.21268614006412717,
+            "admission_rate": 0.9903846153846154,
+            "seconds": 2.5
+          },
+          "beam": {
+            "coverage": 0.2846153846153846,
+            "selective_accuracy": 0.5743243243243243,
+            "net_correct_rate": 0.04230769230769231,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 33184.0,
+            "regret": 0.20768506025114475,
+            "admission_rate": 1.0,
+            "seconds": 2.8
+          },
+          "exhaustive": {
+            "coverage": 0.2846153846153846,
+            "selective_accuracy": 0.5743243243243243,
+            "net_correct_rate": 0.04230769230769231,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 33184.0,
+            "regret": 0.20768506025114475,
+            "admission_rate": 1.0,
+            "seconds": 2.9
+          },
+          "nice_r": {
+            "coverage": 0.2846153846153846,
+            "selective_accuracy": 0.5743243243243243,
+            "net_correct_rate": 0.04230769230769231,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 33184.0,
+            "regret": 0.20768506025114475,
+            "admission_rate": 1.0,
+            "seconds": 3.3
+          }
+        },
+        "loose": {
+          "greedy": {
+            "coverage": 0.28076923076923077,
+            "selective_accuracy": 0.547945205479452,
+            "net_correct_rate": 0.026923076923076925,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 99552.0,
+            "regret": 0.20859016607764738,
+            "admission_rate": 1.0,
+            "seconds": 2.7
+          },
+          "density": {
+            "coverage": 0.28076923076923077,
+            "selective_accuracy": 0.547945205479452,
+            "net_correct_rate": 0.026923076923076925,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 99552.0,
+            "regret": 0.20859016607764738,
+            "admission_rate": 1.0,
+            "seconds": 28.2
+          },
+          "topk": {
+            "coverage": 0.2846153846153846,
+            "selective_accuracy": 0.5743243243243243,
+            "net_correct_rate": 0.04230769230769231,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 33184.0,
+            "regret": 0.20768506025114475,
+            "admission_rate": 1.0,
+            "seconds": 2.4
+          },
+          "gates": {
+            "coverage": 0.28076923076923077,
+            "selective_accuracy": 0.5616438356164384,
+            "net_correct_rate": 0.03461538461538462,
+            "graph_size": 3.775,
+            "multi_wing_share": 0.9980769230769231,
+            "mean_flops": 94670.12307692308,
+            "regret": 0.20846731842157748,
+            "admission_rate": 0.9653846153846154,
+            "seconds": 3.0
+          },
+          "pairs": {
+            "coverage": 0.2519230769230769,
+            "selective_accuracy": 0.5648854961832062,
+            "net_correct_rate": 0.032692307692307694,
+            "graph_size": 1.998076923076923,
+            "multi_wing_share": 0.9980769230769231,
+            "mean_flops": 41320.46153846154,
+            "regret": 0.21105293310508372,
+            "admission_rate": 0.9980769230769231,
+            "seconds": 3.9
+          },
+          "beam": {
+            "coverage": 0.28076923076923077,
+            "selective_accuracy": 0.547945205479452,
+            "net_correct_rate": 0.026923076923076925,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 99552.0,
+            "regret": 0.20859016607764738,
+            "admission_rate": 1.0,
+            "seconds": 6.2
+          },
+          "exhaustive": {
+            "coverage": 0.25,
+            "selective_accuracy": 0.5461538461538461,
+            "net_correct_rate": 0.023076923076923078,
+            "graph_size": 3.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 82960.0,
+            "regret": 0.20500660323258868,
+            "admission_rate": 1.0,
+            "seconds": 5.3
+          },
+          "nice_r": {
+            "coverage": 0.2846153846153846,
+            "selective_accuracy": 0.5743243243243243,
+            "net_correct_rate": 0.04230769230769231,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 33184.0,
+            "regret": 0.20768506025114475,
+            "admission_rate": 1.0,
+            "seconds": 8.3
+          }
+        }
+      },
+      "pareto_dominated_by": {
+        "tight": [
+          "gates",
+          "pairs"
+        ],
+        "loose": []
+      }
+    },
+    "phoneme": {
+      "groups": [
+        2,
+        2,
+        1
+      ],
+      "flops": {
+        "view_1": 752.0,
+        "view_2": 752.0,
+        "view_3": 752.0,
+        "view_1_copy": 752.0,
+        "generalist": 2256.0,
+        "noise": 752.0
+      },
+      "tuning": {
+        "trials": {
+          "0.0": 0.4658333333333333,
+          "0.02": 0.4875,
+          "0.05": 0.4825,
+          "0.1": 0.4825,
+          "0.2": 0.4825
+        },
+        "eta": 0.2
+      },
+      "mechanism": {
+        "best_single": [
+          "generalist"
+        ],
+        "best_graph": [
+          "view_3",
+          "generalist"
+        ],
+        "single_accuracy": 0.79375,
+        "graph_accuracy": 0.7825,
+        "composition_helps": false,
+        "majority_floor": 0.7175
+      },
+      "arms": {
+        "tight": {
+          "greedy": {
+            "coverage": 0.66375,
+            "selective_accuracy": 0.8625235404896422,
+            "net_correct_rate": 0.48125,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1504.0,
+            "regret": 0.15012919535105812,
+            "admission_rate": 1.0,
+            "seconds": 2.6
+          },
+          "density": {
+            "coverage": 0.66375,
+            "selective_accuracy": 0.8625235404896422,
+            "net_correct_rate": 0.48125,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1504.0,
+            "regret": 0.15012919535105812,
+            "admission_rate": 1.0,
+            "seconds": 8.2
+          },
+          "topk": {
+            "coverage": 0.6675,
+            "selective_accuracy": 0.8726591760299626,
+            "net_correct_rate": 0.4975,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1504.0,
+            "regret": 0.15634268440478316,
+            "admission_rate": 1.0,
+            "seconds": 1.4
+          },
+          "gates": {
+            "coverage": 0.6675,
+            "selective_accuracy": 0.8726591760299626,
+            "net_correct_rate": 0.4975,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1504.0,
+            "regret": 0.15634268440478316,
+            "admission_rate": 1.0,
+            "seconds": 1.7
+          },
+          "pairs": {
+            "coverage": 0.63,
+            "selective_accuracy": 0.875,
+            "net_correct_rate": 0.4725,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1504.0,
+            "regret": 0.15173926691767836,
+            "admission_rate": 0.97375,
+            "seconds": 2.6
+          },
+          "beam": {
+            "coverage": 0.66375,
+            "selective_accuracy": 0.8625235404896422,
+            "net_correct_rate": 0.48125,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1504.0,
+            "regret": 0.15012919535105812,
+            "admission_rate": 1.0,
+            "seconds": 2.8
+          },
+          "exhaustive": {
+            "coverage": 0.66375,
+            "selective_accuracy": 0.8625235404896422,
+            "net_correct_rate": 0.48125,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 1504.0,
+            "regret": 0.15012919535105812,
+            "admission_rate": 1.0,
+            "seconds": 3.0
+          },
+          "nice_r": {
+            "coverage": 0.63375,
+            "selective_accuracy": 0.8698224852071006,
+            "net_correct_rate": 0.46875,
+            "graph_size": 1.0,
+            "multi_wing_share": 0.0,
+            "mean_flops": 752.0,
+            "regret": 0.21158879183004842,
+            "admission_rate": 1.0,
+            "seconds": 2.0
+          }
+        },
+        "loose": {
+          "greedy": {
+            "coverage": 0.7125,
+            "selective_accuracy": 0.8701754385964913,
+            "net_correct_rate": 0.5275,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 4512.0,
+            "regret": 0.1230846697795549,
+            "admission_rate": 1.0,
+            "seconds": 2.7
+          },
+          "density": {
+            "coverage": 0.7025,
+            "selective_accuracy": 0.8790035587188612,
+            "net_correct_rate": 0.5325,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 4512.0,
+            "regret": 0.12716994247288532,
+            "admission_rate": 1.0,
+            "seconds": 35.0
+          },
+          "topk": {
+            "coverage": 0.685,
+            "selective_accuracy": 0.8813868613138686,
+            "net_correct_rate": 0.5225,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 3008.0,
+            "regret": 0.12280243523313868,
+            "admission_rate": 1.0,
+            "seconds": 1.5
+          },
+          "gates": {
+            "coverage": 0.7125,
+            "selective_accuracy": 0.8701754385964913,
+            "net_correct_rate": 0.5275,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 4512.0,
+            "regret": 0.1230846697795549,
+            "admission_rate": 1.0,
+            "seconds": 2.1
+          },
+          "pairs": {
+            "coverage": 0.7275,
+            "selective_accuracy": 0.8539518900343642,
+            "net_correct_rate": 0.515,
+            "graph_size": 1.99875,
+            "multi_wing_share": 0.99875,
+            "mean_flops": 3007.06,
+            "regret": 0.12845420237904692,
+            "admission_rate": 0.99875,
+            "seconds": 2.9
+          },
+          "beam": {
+            "coverage": 0.7025,
+            "selective_accuracy": 0.8790035587188612,
+            "net_correct_rate": 0.5325,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 4512.0,
+            "regret": 0.12716994247288532,
+            "admission_rate": 1.0,
+            "seconds": 4.9
+          },
+          "exhaustive": {
+            "coverage": 0.73,
+            "selective_accuracy": 0.863013698630137,
+            "net_correct_rate": 0.53,
+            "graph_size": 3.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 3760.0,
+            "regret": 0.12866588257472802,
+            "admission_rate": 1.0,
+            "seconds": 4.2
+          },
+          "nice_r": {
+            "coverage": 0.75875,
+            "selective_accuracy": 0.871499176276771,
+            "net_correct_rate": 0.56375,
+            "graph_size": 1.0,
+            "multi_wing_share": 0.0,
+            "mean_flops": 2256.0,
+            "regret": 0.15055711153011886,
+            "admission_rate": 1.0,
+            "seconds": 2.6
+          }
+        }
+      },
+      "pareto_dominated_by": {
+        "tight": [],
+        "loose": []
+      }
+    },
+    "qsar-biodeg": {
+      "groups": [
+        14,
+        14,
+        13
+      ],
+      "flops": {
+        "view_1": 1904.0,
+        "view_2": 1904.0,
+        "view_3": 1904.0,
+        "view_1_copy": 1904.0,
+        "generalist": 5712.0,
+        "noise": 1904.0
+      },
+      "tuning": {
+        "trials": {
+          "0.0": 0.6677215189873418,
+          "0.02": 0.6962025316455696,
+          "0.05": 0.6835443037974683,
+          "0.1": 0.6835443037974683,
+          "0.2": 0.6835443037974683
+        },
+        "eta": 0.02
+      },
+      "mechanism": {
+        "best_single": [
+          "generalist"
+        ],
+        "best_graph": [
+          "view_2",
+          "generalist"
+        ],
+        "single_accuracy": 0.8246445497630331,
+        "graph_accuracy": 0.8672985781990521,
+        "composition_helps": true,
+        "majority_floor": 0.5781990521327014
+      },
+      "arms": {
+        "tight": {
+          "greedy": {
+            "coverage": 0.8672985781990521,
+            "selective_accuracy": 0.8579234972677595,
+            "net_correct_rate": 0.6208530805687204,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 3808.0,
+            "regret": 0.15675865628093597,
+            "admission_rate": 1.0,
+            "seconds": 0.6
+          },
+          "density": {
+            "coverage": 0.8672985781990521,
+            "selective_accuracy": 0.8579234972677595,
+            "net_correct_rate": 0.6208530805687204,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 3808.0,
+            "regret": 0.15675865628093597,
+            "admission_rate": 1.0,
+            "seconds": 2.7
+          },
+          "topk": {
+            "coverage": 0.8815165876777251,
+            "selective_accuracy": 0.8655913978494624,
+            "net_correct_rate": 0.6445497630331753,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 3808.0,
+            "regret": 0.13310677304726662,
+            "admission_rate": 1.0,
+            "seconds": 0.4
+          },
+          "gates": {
+            "coverage": 0.8767772511848341,
+            "selective_accuracy": 0.8648648648648649,
+            "net_correct_rate": 0.6398104265402843,
+            "graph_size": 1.990521327014218,
+            "multi_wing_share": 0.995260663507109,
+            "mean_flops": 3789.952606635071,
+            "regret": 0.13543038121690532,
+            "admission_rate": 0.995260663507109,
+            "seconds": 0.5
+          },
+          "pairs": {
+            "coverage": 0.7914691943127962,
+            "selective_accuracy": 0.8562874251497006,
+            "net_correct_rate": 0.5639810426540285,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 3808.0,
+            "regret": 0.145812855241363,
+            "admission_rate": 0.933649289099526,
+            "seconds": 0.9
+          },
+          "beam": {
+            "coverage": 0.8672985781990521,
+            "selective_accuracy": 0.8579234972677595,
+            "net_correct_rate": 0.6208530805687204,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 3808.0,
+            "regret": 0.15675865628093597,
+            "admission_rate": 1.0,
+            "seconds": 1.0
+          },
+          "exhaustive": {
+            "coverage": 0.8672985781990521,
+            "selective_accuracy": 0.8579234972677595,
+            "net_correct_rate": 0.6208530805687204,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 3808.0,
+            "regret": 0.15675865628093597,
+            "admission_rate": 1.0,
+            "seconds": 1.1
+          },
+          "nice_r": {
+            "coverage": 0.8672985781990521,
+            "selective_accuracy": 0.8579234972677595,
+            "net_correct_rate": 0.6208530805687204,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 3808.0,
+            "regret": 0.15675865628093597,
+            "admission_rate": 1.0,
+            "seconds": 1.5
+          }
+        },
+        "loose": {
+          "greedy": {
+            "coverage": 0.9289099526066351,
+            "selective_accuracy": 0.8571428571428571,
+            "net_correct_rate": 0.6635071090047393,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 11424.0,
+            "regret": 0.09607722369244738,
+            "admission_rate": 1.0,
+            "seconds": 0.9
+          },
+          "density": {
+            "coverage": 0.9289099526066351,
+            "selective_accuracy": 0.8571428571428571,
+            "net_correct_rate": 0.6635071090047393,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 11424.0,
+            "regret": 0.09607722369244738,
+            "admission_rate": 1.0,
+            "seconds": 13.0
+          },
+          "topk": {
+            "coverage": 0.976303317535545,
+            "selective_accuracy": 0.8689320388349514,
+            "net_correct_rate": 0.7203791469194313,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 7616.0,
+            "regret": 0.09748466166863687,
+            "admission_rate": 1.0,
+            "seconds": 0.5
+          },
+          "gates": {
+            "coverage": 0.919431279620853,
+            "selective_accuracy": 0.8711340206185567,
+            "net_correct_rate": 0.6824644549763034,
+            "graph_size": 3.981042654028436,
+            "multi_wing_share": 0.995260663507109,
+            "mean_flops": 11387.905213270142,
+            "regret": 0.0883730430783239,
+            "admission_rate": 0.990521327014218,
+            "seconds": 0.7
+          },
+          "pairs": {
+            "coverage": 0.8672985781990521,
+            "selective_accuracy": 0.8579234972677595,
+            "net_correct_rate": 0.6208530805687204,
+            "graph_size": 1.933649289099526,
+            "multi_wing_share": 0.933649289099526,
+            "mean_flops": 7489.668246445498,
+            "regret": 0.10619808259509855,
+            "admission_rate": 0.933649289099526,
+            "seconds": 1.1
+          },
+          "beam": {
+            "coverage": 0.9289099526066351,
+            "selective_accuracy": 0.8571428571428571,
+            "net_correct_rate": 0.6635071090047393,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 11424.0,
+            "regret": 0.09607722369244738,
+            "admission_rate": 1.0,
+            "seconds": 1.7
+          },
+          "exhaustive": {
+            "coverage": 0.943127962085308,
+            "selective_accuracy": 0.8442211055276382,
+            "net_correct_rate": 0.6492890995260664,
+            "graph_size": 3.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 9520.0,
+            "regret": 0.10716500802167828,
+            "admission_rate": 1.0,
+            "seconds": 1.5
+          },
+          "nice_r": {
+            "coverage": 0.9715639810426541,
+            "selective_accuracy": 0.8390243902439024,
+            "net_correct_rate": 0.6587677725118484,
+            "graph_size": 1.0,
+            "multi_wing_share": 0.0,
+            "mean_flops": 5712.0,
+            "regret": 0.1327264669089102,
+            "admission_rate": 1.0,
+            "seconds": 2.8
+          }
+        }
+      },
+      "pareto_dominated_by": {
+        "tight": [
+          "topk",
+          "gates"
+        ],
+        "loose": []
+      }
+    },
+    "numerai28.6": {
+      "groups": [
+        7,
+        7,
+        7
+      ],
+      "flops": {
+        "view_1": 1264.0,
+        "view_2": 1264.0,
+        "view_3": 1264.0,
+        "view_1_copy": 1264.0,
+        "generalist": 3792.0,
+        "noise": 1264.0
+      },
+      "tuning": {
+        "trials": {
+          "0.0": -0.006666666666666667,
+          "0.02": -0.006666666666666667,
+          "0.05": -0.006666666666666667,
+          "0.1": -0.006666666666666667,
+          "0.2": -0.006666666666666667
+        },
+        "eta": 0.2
+      },
+      "mechanism": {
+        "best_single": [
+          "view_3"
+        ],
+        "best_graph": [
+          "view_3",
+          "generalist"
+        ],
+        "single_accuracy": 0.52375,
+        "graph_accuracy": 0.505,
+        "composition_helps": false,
+        "majority_floor": 0.515
+      },
+      "arms": {
+        "tight": {
+          "greedy": {
+            "coverage": 0.18875,
+            "selective_accuracy": 0.46357615894039733,
+            "net_correct_rate": -0.01375,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 2528.0,
+            "regret": 0.05672127512336603,
+            "admission_rate": 1.0,
+            "seconds": 1.8
+          },
+          "density": {
+            "coverage": 0.18875,
+            "selective_accuracy": 0.46357615894039733,
+            "net_correct_rate": -0.01375,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 2528.0,
+            "regret": 0.05672127512336603,
+            "admission_rate": 1.0,
+            "seconds": 9.6
+          },
+          "topk": {
+            "coverage": 0.18875,
+            "selective_accuracy": 0.46357615894039733,
+            "net_correct_rate": -0.01375,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 2528.0,
+            "regret": 0.05672127512336603,
+            "admission_rate": 1.0,
+            "seconds": 2.3
+          },
+          "gates": {
+            "coverage": 0.15125,
+            "selective_accuracy": 0.47107438016528924,
+            "net_correct_rate": -0.00875,
+            "graph_size": 1.38875,
+            "multi_wing_share": 0.64875,
+            "mean_flops": 1755.38,
+            "regret": 0.05702996634393619,
+            "admission_rate": 0.74,
+            "seconds": 2.3
+          },
+          "pairs": {
+            "coverage": 0.20375,
+            "selective_accuracy": 0.49693251533742333,
+            "net_correct_rate": -0.00125,
+            "graph_size": 1.99875,
+            "multi_wing_share": 0.99875,
+            "mean_flops": 2526.42,
+            "regret": 0.05560263379989471,
+            "admission_rate": 1.0,
+            "seconds": 4.3
+          },
+          "beam": {
+            "coverage": 0.18875,
+            "selective_accuracy": 0.46357615894039733,
+            "net_correct_rate": -0.01375,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 2528.0,
+            "regret": 0.05672127512336603,
+            "admission_rate": 1.0,
+            "seconds": 4.4
+          },
+          "exhaustive": {
+            "coverage": 0.18875,
+            "selective_accuracy": 0.46357615894039733,
+            "net_correct_rate": -0.01375,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 2528.0,
+            "regret": 0.05672127512336603,
+            "admission_rate": 1.0,
+            "seconds": 4.6
+          },
+          "nice_r": {
+            "coverage": 0.21,
+            "selective_accuracy": 0.5535714285714286,
+            "net_correct_rate": 0.0225,
+            "graph_size": 1.0,
+            "multi_wing_share": 0.0,
+            "mean_flops": 1264.0,
+            "regret": 0.05555291394860242,
+            "admission_rate": 1.0,
+            "seconds": 3.2
+          }
+        },
+        "loose": {
+          "greedy": {
+            "coverage": 0.2175,
+            "selective_accuracy": 0.4540229885057471,
+            "net_correct_rate": -0.02,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 7584.0,
+            "regret": 0.05556717464692369,
+            "admission_rate": 1.0,
+            "seconds": 4.3
+          },
+          "density": {
+            "coverage": 0.2175,
+            "selective_accuracy": 0.4540229885057471,
+            "net_correct_rate": -0.02,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 7584.0,
+            "regret": 0.05556717464692369,
+            "admission_rate": 1.0,
+            "seconds": 52.3
+          },
+          "topk": {
+            "coverage": 0.18875,
+            "selective_accuracy": 0.46357615894039733,
+            "net_correct_rate": -0.01375,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 2528.0,
+            "regret": 0.05672127512336603,
+            "admission_rate": 1.0,
+            "seconds": 2.3
+          },
+          "gates": {
+            "coverage": 0.16375,
+            "selective_accuracy": 0.45038167938931295,
+            "net_correct_rate": -0.01625,
+            "graph_size": 2.6675,
+            "multi_wing_share": 0.64875,
+            "mean_flops": 4983.32,
+            "regret": 0.05672679246991156,
+            "admission_rate": 0.72875,
+            "seconds": 2.7
+          },
+          "pairs": {
+            "coverage": 0.1875,
+            "selective_accuracy": 0.47333333333333333,
+            "net_correct_rate": -0.01,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 2701.8,
+            "regret": 0.056179363269808796,
+            "admission_rate": 0.9975,
+            "seconds": 4.4
+          },
+          "beam": {
+            "coverage": 0.2175,
+            "selective_accuracy": 0.4540229885057471,
+            "net_correct_rate": -0.02,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 7584.0,
+            "regret": 0.05556717464692369,
+            "admission_rate": 1.0,
+            "seconds": 8.0
+          },
+          "exhaustive": {
+            "coverage": 0.20875,
+            "selective_accuracy": 0.4550898203592814,
+            "net_correct_rate": -0.01875,
+            "graph_size": 3.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 3792.0,
+            "regret": 0.05543717990451759,
+            "admission_rate": 1.0,
+            "seconds": 6.6
+          },
+          "nice_r": {
+            "coverage": 0.21,
+            "selective_accuracy": 0.5535714285714286,
+            "net_correct_rate": 0.0225,
+            "graph_size": 1.0,
+            "multi_wing_share": 0.0,
+            "mean_flops": 1264.0,
+            "regret": 0.05555291394860242,
+            "admission_rate": 1.0,
+            "seconds": 4.0
+          }
+        }
+      },
+      "pareto_dominated_by": {
+        "tight": [],
+        "loose": []
+      }
+    },
+    "mfeat": {
+      "groups": [
+        216,
+        76,
+        64,
+        6,
+        240,
+        47
+      ],
+      "flops": {
+        "view_factors": 21360.0,
+        "view_fourier": 21360.0,
+        "view_karhunen": 21360.0,
+        "view_morphological": 21360.0,
+        "view_pixel": 21360.0,
+        "view_zernike": 21360.0,
+        "generalist": 64080.0
+      },
+      "tuning": {
+        "trials": {
+          "0.0": 0.865,
+          "0.02": 0.865,
+          "0.05": 0.865,
+          "0.1": 0.865,
+          "0.2": 0.865
+        },
+        "eta": 0.2
+      },
+      "mechanism": {
+        "best_single": [
+          "generalist"
+        ],
+        "best_graph": [
+          "view_morphological",
+          "view_pixel",
+          "generalist"
+        ],
+        "single_accuracy": 0.9775,
+        "graph_accuracy": 0.98,
+        "composition_helps": false,
+        "majority_floor": 0.5075000000000001
+      },
+      "arms": {
+        "tight": {
+          "greedy": {
+            "coverage": 0.93,
+            "selective_accuracy": 0.978494623655914,
+            "net_correct_rate": 0.89,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 42720.0,
+            "regret": 0.05681631324580297,
+            "admission_rate": 1.0,
+            "seconds": 2.9
+          },
+          "density": {
+            "coverage": 0.93,
+            "selective_accuracy": 0.978494623655914,
+            "net_correct_rate": 0.89,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 42720.0,
+            "regret": 0.05681631324580297,
+            "admission_rate": 1.0,
+            "seconds": 11.5
+          },
+          "topk": {
+            "coverage": 0.93,
+            "selective_accuracy": 0.978494623655914,
+            "net_correct_rate": 0.89,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 42720.0,
+            "regret": 0.05681631324580297,
+            "admission_rate": 1.0,
+            "seconds": 2.4
+          },
+          "gates": {
+            "coverage": 0.93,
+            "selective_accuracy": 0.978494623655914,
+            "net_correct_rate": 0.89,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 42720.0,
+            "regret": 0.05681631324580297,
+            "admission_rate": 1.0,
+            "seconds": 2.7
+          },
+          "pairs": {
+            "coverage": 0.9325,
+            "selective_accuracy": 0.9758713136729222,
+            "net_correct_rate": 0.8875,
+            "graph_size": 1.9675,
+            "multi_wing_share": 0.9675,
+            "mean_flops": 42025.8,
+            "regret": 0.04918292313246937,
+            "admission_rate": 1.0,
+            "seconds": 2.9
+          },
+          "beam": {
+            "coverage": 0.93,
+            "selective_accuracy": 0.978494623655914,
+            "net_correct_rate": 0.89,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 42720.0,
+            "regret": 0.05681631324580297,
+            "admission_rate": 1.0,
+            "seconds": 4.2
+          },
+          "exhaustive": {
+            "coverage": 0.93,
+            "selective_accuracy": 0.978494623655914,
+            "net_correct_rate": 0.89,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 42720.0,
+            "regret": 0.05681631324580297,
+            "admission_rate": 1.0,
+            "seconds": 4.9
+          },
+          "nice_r": {
+            "coverage": 0.935,
+            "selective_accuracy": 0.9598930481283422,
+            "net_correct_rate": 0.86,
+            "graph_size": 1.0,
+            "multi_wing_share": 0.0,
+            "mean_flops": 21360.0,
+            "regret": 0.07415601396582013,
+            "admission_rate": 1.0,
+            "seconds": 3.5
+          }
+        },
+        "loose": {
+          "greedy": {
+            "coverage": 0.915,
+            "selective_accuracy": 0.9972677595628415,
+            "net_correct_rate": 0.91,
+            "graph_size": 1.0,
+            "multi_wing_share": 0.0,
+            "mean_flops": 64080.0,
+            "regret": 0.030267798566664207,
+            "admission_rate": 1.0,
+            "seconds": 2.8
+          },
+          "density": {
+            "coverage": 0.91,
+            "selective_accuracy": 0.9972527472527473,
+            "net_correct_rate": 0.905,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 128160.0,
+            "regret": 0.018675135592789275,
+            "admission_rate": 1.0,
+            "seconds": 64.5
+          },
+          "topk": {
+            "coverage": 0.915,
+            "selective_accuracy": 0.9972677595628415,
+            "net_correct_rate": 0.91,
+            "graph_size": 2.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 85440.0,
+            "regret": 0.027059371310329313,
+            "admission_rate": 1.0,
+            "seconds": 2.6
+          },
+          "gates": {
+            "coverage": 0.9175,
+            "selective_accuracy": 0.9918256130790191,
+            "net_correct_rate": 0.9025,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 128160.0,
+            "regret": 0.022355293732779034,
+            "admission_rate": 1.0,
+            "seconds": 3.2
+          },
+          "pairs": {
+            "coverage": 0.915,
+            "selective_accuracy": 0.9972677595628415,
+            "net_correct_rate": 0.91,
+            "graph_size": 1.0,
+            "multi_wing_share": 0.0,
+            "mean_flops": 64080.0,
+            "regret": 0.030267798566664207,
+            "admission_rate": 1.0,
+            "seconds": 3.2
+          },
+          "beam": {
+            "coverage": 0.91,
+            "selective_accuracy": 0.9972527472527473,
+            "net_correct_rate": 0.905,
+            "graph_size": 4.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 128160.0,
+            "regret": 0.018675135592789275,
+            "admission_rate": 1.0,
+            "seconds": 7.0
+          },
+          "exhaustive": {
+            "coverage": 0.9025,
+            "selective_accuracy": 0.997229916897507,
+            "net_correct_rate": 0.8975,
+            "graph_size": 3.0,
+            "multi_wing_share": 1.0,
+            "mean_flops": 106800.0,
+            "regret": 0.026919990002533624,
+            "admission_rate": 1.0,
+            "seconds": 6.9
+          },
+          "nice_r": {
+            "coverage": 0.915,
+            "selective_accuracy": 0.9972677595628415,
+            "net_correct_rate": 0.91,
+            "graph_size": 1.0,
+            "multi_wing_share": 0.0,
+            "mean_flops": 64080.0,
+            "regret": 0.030267798566664207,
+            "admission_rate": 1.0,
+            "seconds": 3.6
+          }
+        }
+      },
+      "pareto_dominated_by": {
+        "tight": [],
+        "loose": []
+      }
+    }
+  },
+  "verdict": {
+    "cells": {
+      "spambase/tight": "tie",
+      "spambase/loose": "win",
+      "banknote-authentication/tight": "win",
+      "banknote-authentication/loose": "win",
+      "madelon/tight": "tie",
+      "madelon/loose": "win",
+      "phoneme/tight": "loss",
+      "phoneme/loose": "win",
+      "qsar-biodeg/tight": "tie",
+      "qsar-biodeg/loose": "win",
+      "numerai28.6/tight": "win",
+      "numerai28.6/loose": "win",
+      "mfeat/tight": "loss",
+      "mfeat/loose": "tie"
+    },
+    "wins": 8,
+    "losses": 2,
+    "H1": "supported",
+    "composition_helps_on": [
+      "qsar-biodeg"
+    ],
+    "nice_r_composes_on": [
+      "qsar-biodeg"
+    ],
+    "H2 (planner)": "supported",
+    "mechanism on mfeat": false
+  }
+}
